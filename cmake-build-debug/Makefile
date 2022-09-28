@@ -169,6 +169,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+no1/no1.o: no1/no1.cpp.o
+
+.PHONY : no1/no1.o
+
+# target to build an object file
+no1/no1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no1/no1.cpp.o
+.PHONY : no1/no1.cpp.o
+
+no1/no1.i: no1/no1.cpp.i
+
+.PHONY : no1/no1.i
+
+# target to preprocess a source file
+no1/no1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no1/no1.cpp.i
+.PHONY : no1/no1.cpp.i
+
+no1/no1.s: no1/no1.cpp.s
+
+.PHONY : no1/no1.s
+
+# target to generate assembly for a file
+no1/no1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no1/no1.cpp.s
+.PHONY : no1/no1.cpp.s
+
+no2/no2.o: no2/no2.cpp.o
+
+.PHONY : no2/no2.o
+
+# target to build an object file
+no2/no2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no2/no2.cpp.o
+.PHONY : no2/no2.cpp.o
+
+no2/no2.i: no2/no2.cpp.i
+
+.PHONY : no2/no2.i
+
+# target to preprocess a source file
+no2/no2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no2/no2.cpp.i
+.PHONY : no2/no2.cpp.i
+
+no2/no2.s: no2/no2.cpp.s
+
+.PHONY : no2/no2.s
+
+# target to generate assembly for a file
+no2/no2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no2/no2.cpp.s
+.PHONY : no2/no2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +235,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... no1/no1.o"
+	@echo "... no1/no1.i"
+	@echo "... no1/no1.s"
+	@echo "... no2/no2.o"
+	@echo "... no2/no2.i"
+	@echo "... no2/no2.s"
 .PHONY : help
 
 
