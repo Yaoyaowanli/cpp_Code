@@ -1,5 +1,6 @@
 #include "no1/no1.h"
 #include "no2/no2.h"
+#include "no3/no3.h"
 #include "Sort/Sort.h"
 #include <time.h>
 
@@ -58,7 +59,7 @@ void TestOp(){
 int main() {
     //TestInsertSort();
     //TestShellSort();
-    TestOp();
+    //TestOp();
     //Test1();
     //Test2();
     //Test3();
@@ -68,6 +69,8 @@ int main() {
     //Test7();
     //Test21();
     //Test22();
+    //Test31();
+    Test32();
 
     return 0;
 }

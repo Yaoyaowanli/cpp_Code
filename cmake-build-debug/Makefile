@@ -250,6 +250,33 @@ no2/no2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no2/no2.cpp.s
 .PHONY : no2/no2.cpp.s
 
+no3/no3.o: no3/no3.cpp.o
+
+.PHONY : no3/no3.o
+
+# target to build an object file
+no3/no3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no3/no3.cpp.o
+.PHONY : no3/no3.cpp.o
+
+no3/no3.i: no3/no3.cpp.i
+
+.PHONY : no3/no3.i
+
+# target to preprocess a source file
+no3/no3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no3/no3.cpp.i
+.PHONY : no3/no3.cpp.i
+
+no3/no3.s: no3/no3.cpp.s
+
+.PHONY : no3/no3.s
+
+# target to generate assembly for a file
+no3/no3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no3/no3.cpp.s
+.PHONY : no3/no3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -271,6 +298,9 @@ help:
 	@echo "... no2/no2.o"
 	@echo "... no2/no2.i"
 	@echo "... no2/no2.s"
+	@echo "... no3/no3.o"
+	@echo "... no3/no3.i"
+	@echo "... no3/no3.s"
 .PHONY : help
 
 

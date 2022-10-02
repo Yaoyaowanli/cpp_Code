@@ -101,6 +101,12 @@
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/no2/no2.h">
 			<Option target="cpp_Code"/>
 		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
