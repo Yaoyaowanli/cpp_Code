@@ -76,3 +76,4 @@ private:
 
 
 void Test21();
+void Test22();

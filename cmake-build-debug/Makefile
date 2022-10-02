@@ -142,6 +142,33 @@ cpp_Code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/build
 .PHONY : cpp_Code/fast
 
+Sort/Sort.o: Sort/Sort.cpp.o
+
+.PHONY : Sort/Sort.o
+
+# target to build an object file
+Sort/Sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o
+.PHONY : Sort/Sort.cpp.o
+
+Sort/Sort.i: Sort/Sort.cpp.i
+
+.PHONY : Sort/Sort.i
+
+# target to preprocess a source file
+Sort/Sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.i
+.PHONY : Sort/Sort.cpp.i
+
+Sort/Sort.s: Sort/Sort.cpp.s
+
+.PHONY : Sort/Sort.s
+
+# target to generate assembly for a file
+Sort/Sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.s
+.PHONY : Sort/Sort.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -232,6 +259,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Code"
+	@echo "... Sort/Sort.o"
+	@echo "... Sort/Sort.i"
+	@echo "... Sort/Sort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
