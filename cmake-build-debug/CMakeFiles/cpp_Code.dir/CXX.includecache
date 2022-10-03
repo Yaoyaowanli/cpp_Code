@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.h
-iostream
--
-assert.h
--
-
-/Users/yaoyuan/C:C++_Code/cpp_Code/main.cpp
-no1/no1.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.h
-no2/no2.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/no2/no2.h
-no3/no3.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.h
-Sort/Sort.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.h
-time.h
--
-
-/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.h
-
-/Users/yaoyuan/C:C++_Code/cpp_Code/no2/no2.h
-iostream
--
-
 /Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.cpp
 no3.h
 /Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.h

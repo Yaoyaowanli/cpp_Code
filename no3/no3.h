@@ -12,3 +12,6 @@
 
 void Test31();
 void Test32();
+void Test33();
+void Test34();
+
