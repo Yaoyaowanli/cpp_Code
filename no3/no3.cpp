@@ -6,6 +6,7 @@
 
 //如果一个类中什么成员都没有，简称空类，空类中什么都没有吗？并不是，任何一个类在我们不写的情况下，都会自动生成下面6个成员函数
 //1、初始化和清理： 构造函数、析构函数
+//2、拷贝构造和operator=   ：这两个默认成员函数会按一个一个字节的值拷贝（浅拷贝）
 class Date31{
 public:
     //构造函数一般写他，全缺省的
@@ -217,6 +218,17 @@ public:
         return *this;
     }
 
+    //重载=操作符
+    MyDate& operator= (const MyDate& d){
+        if(this != &d){
+            this->_year = d._year;
+            this->_month = d._month;
+            this->_day = d._day;
+        }
+
+        return *this;
+    }
+
     MyDate operator- (int day){
 
     }
@@ -290,6 +302,18 @@ void Test34(){
     date7.Print();
     std::cout << std::endl;
 
+    //赋值重载
+    MyDate m1(2022,10,14);
+    MyDate m2;
+    m2 = m1;
+    m1.Print();
+
+
+    MyDate m3(2022,10,14);
+    MyDate m4(2022,1,4);
+    m4 = m3;
+    m3.Print();
+    m4.Print();
 }
 
 
@@ -308,3 +332,67 @@ void Test31(){
 //    Date31 d2;
 }
 
+
+class mydate{
+
+public:
+    void Print(){
+        std::cout << _year << " - " << _month << " - " << _day << std::endl;
+    }
+    //构造函数
+    mydate(int year=0,int month=1,int day=1){
+        _year = year;
+        _month = month;
+        _day = day;
+    }
+    //拷贝构造
+    mydate(const mydate& d){
+        _year = d._year;
+        _month = d._month;
+        _day = d._day;
+
+        std::cout << "我是拷贝构造～" << std::endl;
+    }
+    //赋值操作符重载
+    mydate& operator= (const mydate& d){
+        if (this != &d){
+            _year = d._year;
+            _month = d._month;
+            _day = d._day;
+        }
+        std::cout << "我是赋值重载～" << std::endl;
+        return  *this;
+    }
+private:
+    int _year;
+    int _month;
+    int _day;
+};
+
+void Test35(){
+    //构造
+    mydate m1(2022,10,11);
+    mydate m2(2022,10,14);
+    //赋值重载
+    m1 = m2;
+    std::cout << "m1:";
+    m1.Print();
+    std::cout << std::endl;
+
+    std::cout << "m2:";
+    m2.Print();
+    std::cout << std::endl;
+
+    //拷贝构造
+    mydate m3(m1);
+    //拷贝构造
+    mydate m4 = m1;
+    std::cout << "m3:";
+    m3.Print();
+    std::cout << std::endl;
+
+    std::cout << "m4:";
+    m4.Print();
+    std::cout << std::endl;
+
+}
