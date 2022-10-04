@@ -229,10 +229,31 @@ public:
         return *this;
     }
 
-    MyDate operator- (int day){
+    MyDate& operator-= (int day){
+        this->_day -= day;
+        while (this->_day < 1){
+            this->_month--;
+            if(this->_month < 1){
+                this->_year--;
+                this->_month = 12;
+            }
+            this->_day += GetMonthDay(this->_year, this->_month);
+        }
 
+        return *this;
     }
 
+    MyDate operator-(int day){
+        MyDate ret = *this;
+        ret-=day;
+        return ret;
+    }
+
+
+
+    int operator- (const MyDate& d){
+        MyDate max = *this;
+    }
 
     int GetMonthDay(int year, int month){
         static int monthDays[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};

@@ -2,6 +2,7 @@
 #include "no2/no2.h"
 #include "no3/no3.h"
 #include "Sort/Sort.h"
+#include "MyDate/Mydate.h"
 #include <time.h>
 
 void TestInsertSort(){
@@ -73,7 +74,8 @@ int main() {
     //Test32();
     //Test33();
     //Test34();
-    Test35();
+    //Test35();
+    TestMyDate();
 
     return 0;
 }

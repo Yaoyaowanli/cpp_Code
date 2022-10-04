@@ -142,6 +142,33 @@ cpp_Code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/build
 .PHONY : cpp_Code/fast
 
+MyDate/Mydate.o: MyDate/Mydate.cpp.o
+
+.PHONY : MyDate/Mydate.o
+
+# target to build an object file
+MyDate/Mydate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o
+.PHONY : MyDate/Mydate.cpp.o
+
+MyDate/Mydate.i: MyDate/Mydate.cpp.i
+
+.PHONY : MyDate/Mydate.i
+
+# target to preprocess a source file
+MyDate/Mydate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.i
+.PHONY : MyDate/Mydate.cpp.i
+
+MyDate/Mydate.s: MyDate/Mydate.cpp.s
+
+.PHONY : MyDate/Mydate.s
+
+# target to generate assembly for a file
+MyDate/Mydate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.s
+.PHONY : MyDate/Mydate.cpp.s
+
 Sort/Sort.o: Sort/Sort.cpp.o
 
 .PHONY : Sort/Sort.o
@@ -286,6 +313,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Code"
+	@echo "... MyDate/Mydate.o"
+	@echo "... MyDate/Mydate.i"
+	@echo "... MyDate/Mydate.s"
 	@echo "... Sort/Sort.o"
 	@echo "... Sort/Sort.i"
 	@echo "... Sort/Sort.s"
