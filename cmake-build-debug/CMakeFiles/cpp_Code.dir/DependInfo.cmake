@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no1/no1.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no2/no2.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no2/no2.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no3/no3.cpp.o"
+  "/Users/yaoyuan/C:C++_Code/cpp_Code/no4/no4.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no4/no4.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

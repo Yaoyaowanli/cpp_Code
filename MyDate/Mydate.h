@@ -55,7 +55,7 @@ public:
 
     myDate& operator-=(int day);
 
-    myDate operator-(int day);
+    myDate operator-(int day)const;
 
     myDate& operator++();
 
@@ -65,7 +65,7 @@ public:
 
     myDate operator--(int);
 
-    int operator-(const myDate& d1);
+    int operator-(const myDate& d1)const;
 
 
         //形参的常量限定只在函数的常量定义中起作用，声明中参数列表可以不写const，在定义的参数列表加上const就行了

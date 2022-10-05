@@ -141,7 +141,7 @@ myDate& myDate::operator-=(int day){
     return *this;
 }
 
-myDate myDate::operator-(int day){
+myDate myDate::operator-(int day)const{
     myDate ret = *this;
     ret-=day;
     return ret;
@@ -171,7 +171,7 @@ myDate myDate::operator--(int){
     return ret;
 }
 
-int myDate::operator-(const myDate& d1){
+int myDate::operator-(const myDate& d1)const{
     int flag = 1;
     myDate max = *this;
     myDate min = d1;
