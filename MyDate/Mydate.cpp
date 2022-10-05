@@ -42,6 +42,7 @@ myDate::myDate(const myDate& d){
     _day = d._day;
 }
 
+//赋值重载
 myDate& myDate::operator= (const myDate& d1){
     if (this != &d1){
         _year = d1._year;
@@ -107,6 +108,9 @@ myDate myDate::operator+(const int day)const{
 }
 
 myDate& myDate::operator+=(int day){
+    if (day < 0){
+        return *this-= -day;
+    }
     _day+=day;
     while(_day > GetMonthDay(_year,_month)){
         _day -= GetMonthDay(_year,_month);
@@ -121,7 +125,69 @@ myDate& myDate::operator+=(int day){
     return *this;
 }
 
+myDate& myDate::operator-=(int day){
+    if (day < 0){
+        return *this += -day;
+    }
+    _day -= day;
+    while (_day < 1){
+        _month--;
+        if (_month == 0){
+            _year--;
+            _month=12;
+        }
+        _day += GetMonthDay(_year,_month);
+    }
+    return *this;
+}
 
+myDate myDate::operator-(int day){
+    myDate ret = *this;
+    ret-=day;
+    return ret;
+}
+
+//前置++
+myDate& myDate::operator++(){
+    return *this+=1;
+}
+
+//后置++,约定加一个int区分,后置++返回的是++以前的值，这个值就不能再被修改了.
+myDate myDate::operator++(int){
+    myDate ret = *this;
+    *this += 1;
+    return  ret;
+}
+
+//前置--
+myDate& myDate::operator--(){
+    return *this-=1;
+}
+
+//后置--
+myDate myDate::operator--(int){
+    myDate ret = *this;
+    *this-=1;
+    return ret;
+}
+
+int myDate::operator-(const myDate& d1){
+    int flag = 1;
+    myDate max = *this;
+    myDate min = d1;
+    if (*this < d1){
+        min = *this;
+        max = d1;
+        //如果发生交换了，就说明外面是在用一个小的年减去大的年，要返回负数，所以把flag置为-1，在结束时让他*count。
+        flag = -1;
+    }
+    int count = 0;
+    while (min != max){
+        ++min;
+        count++;
+    }
+    return count * flag;
+}
 
 
 
@@ -138,8 +204,21 @@ void TestMyDate(){
     m4.Print();
 */
 
-   myDate m1(2022,10,14);
+   /*myDate m1(2022,10,14);
    //(m1+100).Print();
     myDate m3;
-    m3 = m1;
+    m3 = m1;*/
+
+   /*myDate m1(2022,10,14);
+   m1-=10;
+   m1.Print();
+   myDate m2;
+   m2 = m1 - 1;
+   m2.Print();
+   m1.Print();*/
+
+   myDate m1(2022,10,14);
+   m1 += -100;
+   m1.Print();
+
 }

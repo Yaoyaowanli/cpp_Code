@@ -28,6 +28,9 @@ public:
     //所以需要传引用，编译器默认的拷贝构造会按照字节拷贝。
     myDate(const myDate& d);
 
+    //4、默认成员函数4：赋值重载，拷贝构造是去用一个已有对象实例的值去构造一个新的对象实例，而赋值重载是用一个已有对象的实例去把他的值
+    // 赋值给另一个已有实例。所以赋值重载要返回的是一个已有对象的引用。这个函数也是默认成员函数之一，我们不写编译器也会自动生成一个，
+    //编译器生成的是按字节拷贝赋值到已有的对象实例中。
     myDate& operator= (const myDate& d1);
 
     //操作符重载 : 自定义类型是不能用运算符的，如果要用就需要去重载，实现他的逻辑
@@ -50,7 +53,22 @@ public:
 
     myDate& operator+=(int day);
 
-    //形参的常量限定只在函数的常量定义中起作用，声明中参数列表可以不写const，在定义的参数列表加上const就行了
+    myDate& operator-=(int day);
+
+    myDate operator-(int day);
+
+    myDate& operator++();
+
+    myDate operator++(int);
+
+    myDate& operator--();
+
+    myDate operator--(int);
+
+    int operator-(const myDate& d1);
+
+
+        //形参的常量限定只在函数的常量定义中起作用，声明中参数列表可以不写const，在定义的参数列表加上const就行了
     static int GetMonthDay(int year,int month);
     void Print();
 
