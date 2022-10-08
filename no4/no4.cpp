@@ -107,6 +107,7 @@ void TestNo41Date(){
 
 class D {
 public:
+    //对象实例一定是通过构造函数或拷贝构造的
     D(){
         ++n;
     }
@@ -114,7 +115,7 @@ public:
         ++n;
     }
 
-    static int GetN(){  //没有this指针，函数中不能访问非静态的成员
+    static int GetN(){  //static修饰的方法没有this指针，函数中不能访问非静态的成员
         return n;
     }
 
@@ -139,3 +140,36 @@ void TestNo4A(){
 }
 
 
+//设计一个类，计算他有多少个实例
+
+class S {
+public:
+    S(int n){
+        _n = n;
+        _Count++;
+    }
+
+    S(const S& s){
+        _n = s._n;
+        _Count++;
+    }
+
+    static int GetCount(){
+        return _Count;
+    }
+
+private:
+    int _n;
+    static int _Count;
+};
+
+int S::_Count = 0;
+
+void TestS(){
+    S a1(1);
+    S a2(2);
+    S a3=a2;
+    S::GetCount();
+
+    std::cout << a3.GetCount() << std::endl;
+}

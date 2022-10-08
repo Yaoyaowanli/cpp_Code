@@ -4,6 +4,7 @@
 #include "Sort/Sort.h"
 #include "MyDate/Mydate.h"
 #include "no4/no4.h"
+#include "no5/no5.h"
 #include <time.h>
 
 void TestInsertSort(){
@@ -77,7 +78,8 @@ int main() {
     //Test34();
     //Test35();
     //TestMyDate();
-    TestNo4A();
+    //TestNo4A();
+    TestSum();
 
     return 0;
 }

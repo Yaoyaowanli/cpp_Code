@@ -14,6 +14,7 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../no1/no1.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no2/no2.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no3/no3.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no4/no4.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../no5/no5.h
 
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.cpp
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.h
@@ -26,4 +27,7 @@ CMakeFiles/cpp_Code.dir/no3/no3.cpp.o: ../no3/no3.h
 
 CMakeFiles/cpp_Code.dir/no4/no4.cpp.o: ../no4/no4.cpp
 CMakeFiles/cpp_Code.dir/no4/no4.cpp.o: ../no4/no4.h
+
+CMakeFiles/cpp_Code.dir/no5/no5.cpp.o: ../no5/no5.cpp
+CMakeFiles/cpp_Code.dir/no5/no5.cpp.o: ../no5/no5.h
 
