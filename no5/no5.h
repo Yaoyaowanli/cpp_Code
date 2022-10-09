@@ -14,3 +14,7 @@
 
 
 void TestSum();
+void TestNo5Date3();
+void TestNo5Date4();
+void TestSolution2();
+void TestABCD();

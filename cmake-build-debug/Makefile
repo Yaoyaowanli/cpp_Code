@@ -358,6 +358,33 @@ no5/no5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no5/no5.cpp.s
 .PHONY : no5/no5.cpp.s
 
+no6/no6.o: no6/no6.cpp.o
+
+.PHONY : no6/no6.o
+
+# target to build an object file
+no6/no6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no6/no6.cpp.o
+.PHONY : no6/no6.cpp.o
+
+no6/no6.i: no6/no6.cpp.i
+
+.PHONY : no6/no6.i
+
+# target to preprocess a source file
+no6/no6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no6/no6.cpp.i
+.PHONY : no6/no6.cpp.i
+
+no6/no6.s: no6/no6.cpp.s
+
+.PHONY : no6/no6.s
+
+# target to generate assembly for a file
+no6/no6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no6/no6.cpp.s
+.PHONY : no6/no6.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,6 +418,9 @@ help:
 	@echo "... no5/no5.o"
 	@echo "... no5/no5.i"
 	@echo "... no5/no5.s"
+	@echo "... no6/no6.o"
+	@echo "... no6/no6.i"
+	@echo "... no6/no6.s"
 .PHONY : help
 
 

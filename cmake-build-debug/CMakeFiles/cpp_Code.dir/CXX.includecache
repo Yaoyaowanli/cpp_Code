@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/no5/no5.cpp
-no5.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/no5/no5.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.cpp
+no6.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/no5/no5.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.h
+cstdlib
+-
 iostream
 -
 
