@@ -13,3 +13,5 @@
 
 
 void TestAno6();
+void TestNo6A();
+void TestTemplate();

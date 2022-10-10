@@ -85,7 +85,9 @@ int main() {
     //TestNo5Date4();
     //TestSolution2();
     //TestABCD();
-    TestAno6();
+    //TestAno6();
+    //TestNo6A();
+    TestTemplate();
 
     return 0;
 }

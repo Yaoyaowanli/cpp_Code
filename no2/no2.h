@@ -50,6 +50,7 @@ struct ListNode_CPP{  //struct默认是共有的
 
 
 
+/*
 class Stack{
     //1、成员函数
 public:
@@ -67,6 +68,7 @@ private:
     int _size;
     int _capacity;
 };
+*/
 
 
 
