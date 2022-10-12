@@ -22,7 +22,7 @@ public:
 
     void push_back(const T& x);
 
-    T operator[](size_t i){
+    T& operator[](size_t i){
         assert(i < _size);
         return _a[i];
     }
@@ -50,11 +50,30 @@ void vector<T>::push_back(const T& x){
         if (_a){
             memcpy(tmp, _a, _size * sizeof(T));
             delete []_a;
-            _a = tmp;
         }
+        _a = tmp;
         _capacity = newCapacity;
     }
 
     _a[_size] = x;
     _size++;
+}
+
+void TestVector(){
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    for(int i=0; i< v.size(); i++){
+        v[i]*=2;
+    }
+
+    std::cout << std::endl;
+    
+    for(int i=0; i< v.size(); i++){
+        std::cout << v[i] << " ";
+    }
+
 }

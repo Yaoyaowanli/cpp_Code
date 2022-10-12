@@ -7,3 +7,8 @@
 
 #endif //CPP_CODE_NO7_H
 #include <iostream>
+
+
+
+
+void TestVector();

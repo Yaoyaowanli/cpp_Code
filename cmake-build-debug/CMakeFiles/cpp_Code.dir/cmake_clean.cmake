@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o"
+  "CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o"
   "CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o"
   "CMakeFiles/cpp_Code.dir/main.cpp.o"
   "CMakeFiles/cpp_Code.dir/no1/no1.cpp.o"

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.cpp
-no6.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.cpp
+STL_String.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/no6/no6.h
-cstdlib
--
+/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.h
 iostream
+-
+string
 -
 

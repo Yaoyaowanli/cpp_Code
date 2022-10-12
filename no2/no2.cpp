@@ -55,9 +55,9 @@ void Test21(){
 
 
 //2、在类外面定义成员函数
-bool Stack::Empty() {
+//bool Stack::Empty() {
     //...
-}
+//}
 
 
 //class大小遵循内存对齐原则，类中只计算成员变量大小，不计算方法
@@ -84,10 +84,10 @@ class A3{
 
 //计算类的大小
 void Test21(){
-    Stack s1;
+    //Stack s1;
     //s1.Push(1);
 
-    std::cout << sizeof(s1) << std::endl;
+    //std::cout << sizeof(s1) << std::endl;
     std::cout << sizeof(A1) << std::endl;
     std::cout << sizeof(A2) << std::endl;
     std::cout << sizeof(A3) << std::endl;

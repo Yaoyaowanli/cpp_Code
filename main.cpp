@@ -6,6 +6,8 @@
 #include "no4/no4.h"
 #include "no5/no5.h"
 #include "no6/no6.h"
+#include "no7/no7.h"
+#include "STL_String/STL_String.h"
 #include <time.h>
 
 void TestInsertSort(){
@@ -87,7 +89,15 @@ int main() {
     //TestABCD();
     //TestAno6();
     //TestNo6A();
-    TestTemplate();
+    //TestTemplate();
+    //TestVector();
+    //TestString();
+    //TestString1();
+    //TestString2();
+    //TestString3();
+    //TestString4();
+    //TestString5();
+    TestString6();
 
     return 0;
 }
