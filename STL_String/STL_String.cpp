@@ -197,5 +197,154 @@ void TestString6() {
     //删除
     s1.erase(8,1);
     cout << s1 << endl;
+}
 
+void TestString7(){
+    string s1("hello");
+    s1+= ' ';
+    s1+= "world";
+
+    for(int i =0; i<s1.size();i++){
+        cout << s1[i] << " " ;
+    }
+    cout << endl;
+
+    string::iterator it = s1.begin();
+    while (it != s1.end()){
+        cout << *it << " ";
+        it++;
+    }
+    cout << endl;
+
+    for (auto e : s1){
+        cout << e << " ";
+    }
+    cout << endl;
+    //获得c字符串
+    auto pi = s1.c_str();
+    while(*pi != '\0'){
+        printf("%c ",*pi);
+        pi++;
+    }
+    cout << endl;
+    cout << s1 << endl;
+    cout << s1.c_str() << endl;
+    s1+='\0';
+    s1+= "world";
+    cout << s1 << endl; //使用string输出'\0'会变成不可见字符。
+    cout << s1.c_str() << endl; //使用c字符串打印遇到第一个'\0'就停止了。
+}
+
+string& GetSubStr(string& s, int pos){
+    auto ret = s.substr(pos,string::npos);
+    return ret;
+}
+
+void TestString8(){
+    string s1("string.cpp");
+    string s2("string.c");
+    string s3("string.txt");
+
+    size_t pos = s1.find('.');
+    if (pos != string::npos){
+        cout << pos << endl;
+        string sub = s1.substr(pos,string::npos);
+        cout << sub << endl;
+    }
+    pos = s2.find('.');
+    if(pos != string::npos){
+        cout << pos << endl;
+        cout << s2.substr(pos,string::npos) << endl;
+    }
+
+    pos = s3.find('.');
+    if (pos!= string::npos){
+        cout << pos << endl;
+        cout << s3.substr(pos,string::npos);
+    }
+}
+
+
+void spList_url(string& s1){
+    size_t pos = s1.find(':');
+    if (pos == string::npos){
+        exit(-1);
+    }
+    string agreement(s1.substr(0,pos));
+    cout << "agreement:" << agreement << endl;
+
+
+    size_t pos2 = s1.find('/',pos+3);
+    if(pos2 == string::npos){
+        cout << "find failed"<<endl;
+    }
+    string domain(s1.substr(pos+3,pos2-(pos+3)));
+    cout << "domain:" << domain << endl;
+
+
+    string resources(s1.substr(pos2+1,string::npos));
+    cout << "resources:" << resources << endl;
+}
+
+void TestString9(){
+    string s2("https://cplusplus.com/reference/string/string/substr/");
+    string s1("https://leetcode.cn/problems/first-unique-character-in-a-string/");
+
+    //将上面两个url分离 : 协议 域名 资源名称
+    spList_url(s1);
+    spList_url(s2);
+}
+
+void TestString10(){
+    //operator+ 不改变自身，返回的是新构造的相加对象，+=改编自身
+    string str1("hello");
+
+    string ret1 = str1+"world";
+    str1 += " world";
+
+}
+
+
+    bool IsChar(char ch){
+        if ((ch>='a' && ch<='z') || (ch>=0 && ch<=9)){
+            return true;
+        }
+        return false;
+    }
+
+    bool isPalindrome(string s) {
+        //将字符串转成全小写
+        for(auto& e : s){
+            if (e>='A' && e<='Z'){
+                e += 32;
+            }
+        }
+
+        int left = 0;
+        int right = s.size()-1;
+
+        while(left<right){
+            while (left<right && (!IsChar(s[left]))){
+                left++;
+            }
+
+            while(left<right && (!IsChar(s[right]))){
+                right--;
+            }
+
+            if (s[left] != s[right]){
+                return false;
+            }else{
+                left++;
+                right--;
+            }
+        }
+
+        return true;
+    }
+
+void TestString11(){
+    string s("0P");
+    bool a = isPalindrome(s);
+    cout <<a << endl;
 }

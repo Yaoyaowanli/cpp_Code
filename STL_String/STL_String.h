@@ -22,3 +22,8 @@ void TestString3();
 void TestString4();
 void TestString5();
 void TestString6();
+void TestString7();
+void TestString8();
+void TestString9();
+void TestString10();
+void TestString11();
