@@ -4,6 +4,9 @@
 CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o: ../MyDate/Mydate.cpp
 CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o: ../MyDate/Mydate.h
 
+CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o: ../MyString/MyString.cpp
+CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o: ../MyString/MyString.h
+
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.cpp
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.h
 
@@ -11,6 +14,7 @@ CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.cpp
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.h
 
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyDate/Mydate.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_String/STL_String.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../main.cpp

@@ -86,6 +86,12 @@
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/MyDate/Mydate.h">
 			<Option target="cpp_Code"/>
 		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/MyString/MyString.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/MyString/MyString.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>

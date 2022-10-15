@@ -169,6 +169,33 @@ MyDate/Mydate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.s
 .PHONY : MyDate/Mydate.cpp.s
 
+MyString/MyString.o: MyString/MyString.cpp.o
+
+.PHONY : MyString/MyString.o
+
+# target to build an object file
+MyString/MyString.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o
+.PHONY : MyString/MyString.cpp.o
+
+MyString/MyString.i: MyString/MyString.cpp.i
+
+.PHONY : MyString/MyString.i
+
+# target to preprocess a source file
+MyString/MyString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.i
+.PHONY : MyString/MyString.cpp.i
+
+MyString/MyString.s: MyString/MyString.cpp.s
+
+.PHONY : MyString/MyString.s
+
+# target to generate assembly for a file
+MyString/MyString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.s
+.PHONY : MyString/MyString.cpp.s
+
 STL_String/STL_String.o: STL_String/STL_String.cpp.o
 
 .PHONY : STL_String/STL_String.o
@@ -451,6 +478,9 @@ help:
 	@echo "... MyDate/Mydate.o"
 	@echo "... MyDate/Mydate.i"
 	@echo "... MyDate/Mydate.s"
+	@echo "... MyString/MyString.o"
+	@echo "... MyString/MyString.i"
+	@echo "... MyString/MyString.s"
 	@echo "... STL_String/STL_String.o"
 	@echo "... STL_String/STL_String.i"
 	@echo "... STL_String/STL_String.s"

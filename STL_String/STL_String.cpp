@@ -344,7 +344,60 @@ void TestString10(){
     }
 
 void TestString11(){
-    string s("0P");
-    bool a = isPalindrome(s);
-    cout <<a << endl;
+    //string s("0P");
+    //bool a = isPalindrome(s);
+    //cout <<a << endl;
+    string s("9");
+    cout<< (s[0]-'0') << endl;
+}
+
+
+
+    string addStrings(string num1, string num2) {
+        int i=num1.size()-1,j=num2.size()-1,add=0;
+        string ans = "";
+        while(i>=0 || j>=0 || add!=0){
+            int x = (i<0 ? 0:num1[i]-'0');
+            int y = (j<0 ? 0:num2[j]-'0');
+            int sum = x+y+add;
+            ans.push_back((sum%10)+'0');
+            add = sum/10;
+            i--;
+            j--;
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+
+
+    string multiply(string num1, string num2) {
+
+        int count = -1;
+        string ans = "";
+        string tmp = "";
+        while (num2.size()>0){
+            //每次拿到num2的最后一位数
+            char back = num2.back();
+            count++;
+            int n = count;
+            for(int i = back-'0';i>0;i--){
+                tmp = addStrings(tmp,num1);
+            }
+            //末尾加0
+            while(n>0){
+                tmp.push_back('0');
+                n--;
+            }
+            ans = addStrings(ans,tmp);
+            tmp = "";
+            num2.pop_back();
+        }
+        return ans;
+    }
+
+void TestString12(){
+    string num1("123");
+    string num2("456");
+    string ret = multiply(num1,num2);
+    cout << ret << endl;
 }

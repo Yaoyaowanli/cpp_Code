@@ -27,3 +27,4 @@ void TestString8();
 void TestString9();
 void TestString10();
 void TestString11();
+void TestString12();
