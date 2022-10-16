@@ -106,7 +106,8 @@ int main() {
     //TestString11();
     //TestString12();
     //test_string1();
-    Test_string1();
+    //Test_string1();
+    Test_string2();
 
     return 0;
 }

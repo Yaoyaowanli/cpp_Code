@@ -82,6 +82,8 @@ void test_string1(){
 
 using namespace yaoYuan;
 
+size_t string:: npos = -1;
+
 string::iterator yaoYuan::string::begin(){
     return _str;
 }
@@ -155,9 +157,95 @@ std::ostream& operator<< (std::ostream& out,const string& s){
     return out;
 }
 
-std::istream operator>> (std::istream& in,string& s){
+void yaoYuan::string::reserve(size_t n) {
+    if (n > _capacity){
+        char* tmp = new char[n+1];
+        strcpy(tmp,_str);
+        delete[] _str;
+        _str = tmp;
+        _capacity = n;
+    }
+}
+
+/*std::istream yaoYuan::string::operator>> (std::istream& in){
+
+
+}*/
+
+void yaoYuan::string::push_back(const char ch) {
+    if (_size == _capacity){
+        size_t newCapacity = _capacity==0 ? 2:_capacity*2;
+        reserve(newCapacity);
+    }
+    _str[_size] = ch;
+    ++_size;
+    _str[_size] = '\0';
+}
+
+void yaoYuan::string::append(const char *str) {
+    size_t len = strlen(str);
+    if(_size+len > _capacity){
+        reserve(_size+len);
+    }
+    strcpy(_str+_size,str);
+    _size += len;
+}
+
+string& yaoYuan::string::operator+=(const char ch) {
+    this->push_back(ch);
+    return *this;
+}
+
+string& yaoYuan::string::operator+=(const char *str) {
+    this->append(str);
+    return *this;
+}
+
+
+string& yaoYuan::string::insert(size_t pos, char ch) {
+    assert(pos < this->_size);
+    if (_size == _capacity){
+        size_t newCapacity = _capacity==0? 2:_capacity*2;
+        reserve(newCapacity);
+    }
+    //移动字符
+    size_t end = _size;
+    while (end >= pos){
+        _str[end+1] = _str[end];
+        --end;
+    }
+    _str[pos] = ch;
+    ++_size;
+    return *this;
+}
+
+string& yaoYuan::string::insert(size_t pos, const char *str) {
+    assert(pos < this->_size);
+    size_t len = strlen(str);
+    if (_size+len >= _capacity){
+        reserve(_size+len);
+    }
+    size_t end = _size;
+    while (end >= pos){
+        _str[end+len] = _str[end];
+        end--;
+    }
+    /*for (size_t i=0;i< len;i++){
+        _str[pos] = str[i];
+        pos++;
+    }*/
+    strncpy(_str+pos,str,len);
+    _size+=len;
+    return *this;
+}
+
+void yaoYuan::string::resize(size_t n, char ch) {
 
 }
+
+
+
+
 
 
 void Test_string1(){
@@ -187,6 +275,57 @@ void Test_string1(){
         std::cout << e << " ";
     }
     std::cout << std::endl;
+}
+
+void Test_string2() {
+    string s1("hello");
+    s1.push_back(' ');
+    s1.push_back('w');
+    s1.push_back('o');
+    s1.push_back('r');
+    s1.push_back('l');
+    s1.push_back('d');
+
+    for (size_t i = 0; i < s1.size(); i++) {
+        std::cout << s1[i] << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << s1.c_str() << std::endl;
+
+    std::cout << s1.capacity() << " " << s1.size() << std::endl;
+    s1.append(" std xxxxxxxxxxxxxxxxxxxxxxxxxx");
+    string::iterator it = s1.begin();
+    while (it != s1.end()) {
+        std::cout << *it << " ";
+        it++;
+    }
+    std::cout << std::endl;
+    std::cout << s1.capacity() << " " << s1.size() << std::endl;
+    std::cout << s1.c_str() << std::endl;
+
+    s1 += ' ';
+    s1 += 'h';
+    s1 += "ello world";
+    for (auto e:s1) {
+        std::cout << e << " ";
+    }
+    std::cout << std::endl;
+
+    string s2;
+    s2 += 'h';
+    s2 += "ello";
+    for (auto e:s2) {
+        std::cout << e;
+    }
+    std::cout << std::endl;
+
+
+    string s3("hello");
+    s3.insert(1, 'x');
+    std::cout << s3 << std::endl;
+    s3.insert(1, "aaaaaaaaaaaaaaa");
+    std::cout << s3.c_str() << std::endl;
 }
 
 

@@ -64,17 +64,50 @@ namespace yaoYuan{
 
         const char& operator[](size_t i)const;
 
-
         const char* c_str()const;
 
+        void reserve(size_t n);
 
+        void push_back(char ch);
+
+        void append(const char* str);
+
+        string& operator+= (char ch);
+
+        string& operator+= (const char* str);
+
+        //std::istream operator>> (std::istream& in);
+
+        string& insert(size_t pos,char ch);
+
+        string& insert(size_t pos,const char* str);
+
+        void resize(size_t n,char ch=' ');
+
+        void erase(size_t pos,size_t len=npos);
+
+        size_t find(char ch);
+
+        size_t find(const char* str);
+
+        bool operator< (const string& s);
+
+        bool operator== (const string& s);
+        bool operator!= (const string& s);
+        bool operator<= (const string& s);
+        bool operator> (const string& s);
+        bool operator>= (const string& s);
 
     private:
         char* _str;
         size_t _size;
         size_t _capacity;
+
+        static size_t npos;
     };
 }
 
 
+
 void Test_string1();
+void Test_string2();
