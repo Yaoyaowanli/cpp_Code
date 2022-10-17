@@ -76,19 +76,17 @@ namespace yaoYuan{
 
         string& operator+= (const char* str);
 
-        //std::istream operator>> (std::istream& in);
-
         string& insert(size_t pos,char ch);
 
         string& insert(size_t pos,const char* str);
 
-        void resize(size_t n,char ch=' ');
+        void resize(size_t n,char ch='\0');
 
-        void erase(size_t pos,size_t len=npos);
+        string& erase(size_t pos,size_t len=npos);
 
-        size_t find(char ch);
+        size_t find(char ch,size_t pos = 0);
 
-        size_t find(const char* str);
+        size_t find(const char* str,size_t pos = 0);
 
         bool operator< (const string& s);
 
@@ -111,3 +109,4 @@ namespace yaoYuan{
 
 void Test_string1();
 void Test_string2();
+void Test_string3();

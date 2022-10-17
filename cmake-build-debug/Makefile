@@ -466,6 +466,33 @@ no7/no7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/no7/no7.cpp.s
 .PHONY : no7/no7.cpp.s
 
+string_copy/string_copy.o: string_copy/string_copy.cpp.o
+
+.PHONY : string_copy/string_copy.o
+
+# target to build an object file
+string_copy/string_copy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o
+.PHONY : string_copy/string_copy.cpp.o
+
+string_copy/string_copy.i: string_copy/string_copy.cpp.i
+
+.PHONY : string_copy/string_copy.i
+
+# target to preprocess a source file
+string_copy/string_copy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.i
+.PHONY : string_copy/string_copy.cpp.i
+
+string_copy/string_copy.s: string_copy/string_copy.cpp.s
+
+.PHONY : string_copy/string_copy.s
+
+# target to generate assembly for a file
+string_copy/string_copy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.s
+.PHONY : string_copy/string_copy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -511,6 +538,9 @@ help:
 	@echo "... no7/no7.o"
 	@echo "... no7/no7.i"
 	@echo "... no7/no7.s"
+	@echo "... string_copy/string_copy.o"
+	@echo "... string_copy/string_copy.i"
+	@echo "... string_copy/string_copy.s"
 .PHONY : help
 
 

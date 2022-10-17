@@ -157,6 +157,19 @@ std::ostream& operator<< (std::ostream& out,const string& s){
     return out;
 }
 
+std::istream& operator>> (std::istream& in,string& s){
+    while(1){
+        char ch;
+        ch = in.get();
+        if (ch=='\n') {
+            break;
+        }else{
+            s+=ch;
+        }
+    }
+    return in;
+}
+
 void yaoYuan::string::reserve(size_t n) {
     if (n > _capacity){
         char* tmp = new char[n+1];
@@ -167,10 +180,6 @@ void yaoYuan::string::reserve(size_t n) {
     }
 }
 
-/*std::istream yaoYuan::string::operator>> (std::istream& in){
-
-
-}*/
 
 void yaoYuan::string::push_back(const char ch) {
     if (_size == _capacity){
@@ -240,9 +249,81 @@ string& yaoYuan::string::insert(size_t pos, const char *str) {
 }
 
 void yaoYuan::string::resize(size_t n, char ch) {
-
+    if (n < _size){
+        _str[n] = ch;
+        _size = n;
+    }else{
+        if (n > _capacity){
+            reserve(n);
+        }
+        while (_size < n){
+            _str[_size] = ch;
+            _size++;
+        }
+        _str[_size] = '\0';
+    }
 }
 
+string& yaoYuan::string::erase(size_t pos, size_t len) {
+    assert(pos<_size);
+    if (len == string::npos || pos+len >= _size){
+        _str[pos] = '\0';
+    }else{
+        size_t end = pos+len;
+        while (_str[end] != '\0'){
+            _str[pos++] = _str[end++];
+        }
+        _str[pos] = '\0';
+    }
+    _size = pos;
+    return *this;
+}
+
+size_t yaoYuan::string::find(char ch,size_t pos) {
+    assert(pos<_size);
+    size_t i = pos;
+    while(_str[i++] != ch){
+        if(i>=_size){
+            return string::npos;
+        }
+    }
+    return i-1;
+}
+
+size_t yaoYuan::string::find(const char *str, size_t pos) {
+    char* p = strstr(_str,str);
+    if (p== nullptr){
+        return string::npos;
+    }else{
+        return p-_str;
+    }
+}
+
+bool yaoYuan::string::operator<(const string &s) {
+    int ret = strcmp(_str,s._str);
+    return ret < 0;
+}
+
+bool yaoYuan::string::operator==(const string &s) {
+    int ret = strcmp(_str,s._str);
+    return ret==0;
+}
+
+bool yaoYuan::string::operator!=(const string &s) {
+    return !(*this == s);
+}
+
+bool yaoYuan::string::operator>(const string &s) {
+    return !(*this < s);
+}
+
+bool yaoYuan::string::operator<=(const string &s) {
+    return (*this < s) || (*this == s);
+}
+
+bool yaoYuan::string::operator>=(const string &s) {
+    return (*this > s) || (*this == s);
+}
 
 
 
@@ -329,3 +410,21 @@ void Test_string2() {
 }
 
 
+void Test_string3(){
+    string s1("hello");
+    s1.reserve(10);
+    std::cout << s1 << std::endl;
+    s1.resize(8,'x');
+    std::cout << s1 << std::endl;
+    s1.resize(18,'a');
+    std::cout << s1 << std::endl;
+    s1.resize(2);
+    std::cout << s1 << std::endl;
+
+    string s2("helloworld");
+    s2.erase(5,2);
+    std::cout << s2 << std::endl;
+
+    string s3("hello");
+    std::cout << s3.find("ll") << std::endl;
+}
