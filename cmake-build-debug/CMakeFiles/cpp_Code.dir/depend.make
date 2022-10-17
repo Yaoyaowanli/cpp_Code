@@ -10,12 +10,16 @@ CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.cpp
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.h
 
+CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o: ../STL_vector/STL_vector.cpp
+CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o: ../STL_vector/STL_vector.h
+
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.cpp
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.h
 
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyDate/Mydate.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_String/STL_String.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../main.cpp
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no1/no1.h
@@ -46,4 +50,7 @@ CMakeFiles/cpp_Code.dir/no6/no6.cpp.o: ../no6/no6.h
 
 CMakeFiles/cpp_Code.dir/no7/no7.cpp.o: ../no7/no7.cpp
 CMakeFiles/cpp_Code.dir/no7/no7.cpp.o: ../no7/no7.h
+
+CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o: ../string_copy/string_copy.cpp
+CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o: ../string_copy/string_copy.h
 

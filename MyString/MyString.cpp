@@ -118,7 +118,7 @@ string& yaoYuan::string::operator=(const string &s) {
         this->_size = s._size;
         char* tmp = new char[strlen(s._str)+1];
         strcpy(tmp,s._str);
-        delete this->_str;
+        delete[] this->_str;
         this->_str = tmp;
     }
     return *this;
@@ -212,14 +212,14 @@ string& yaoYuan::string::operator+=(const char *str) {
 
 
 string& yaoYuan::string::insert(size_t pos, char ch) {
-    assert(pos < this->_size);
+    assert(pos <= this->_size);
     if (_size == _capacity){
         size_t newCapacity = _capacity==0? 2:_capacity*2;
         reserve(newCapacity);
     }
     //移动字符
-    size_t end = _size;
-    while (end >= pos){
+    int end = (int)_size;
+    while (end >= (int)pos){
         _str[end+1] = _str[end];
         --end;
     }
@@ -229,13 +229,13 @@ string& yaoYuan::string::insert(size_t pos, char ch) {
 }
 
 string& yaoYuan::string::insert(size_t pos, const char *str) {
-    assert(pos < this->_size);
+    assert(pos <= this->_size);
     size_t len = strlen(str);
     if (_size+len >= _capacity){
         reserve(_size+len);
     }
-    size_t end = _size;
-    while (end >= pos){
+    int end = (int)_size;
+    while (end >= (int)pos){
         _str[end+len] = _str[end];
         end--;
     }
@@ -427,4 +427,6 @@ void Test_string3(){
 
     string s3("hello");
     std::cout << s3.find("ll") << std::endl;
+    s3.insert(0,'x');
+    std::cout << s3 << std::endl;
 }

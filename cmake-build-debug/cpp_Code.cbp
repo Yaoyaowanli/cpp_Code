@@ -98,6 +98,12 @@
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.h">
 			<Option target="cpp_Code"/>
 		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_vector/STL_vector.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_vector/STL_vector.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>

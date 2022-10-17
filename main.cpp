@@ -9,6 +9,7 @@
 #include "no7/no7.h"
 #include "STL_String/STL_String.h"
 #include "MyString/MyString.h"
+#include "STL_vector/STL_vector.h"
 #include <time.h>
 
 void TestInsertSort(){
@@ -108,7 +109,9 @@ int main() {
     //test_string1();
     //Test_string1();
     //Test_string2();
-    Test_string3();
+    //Test_string3();
+    //test_vector1();
+    test_vector6();
 
     return 0;
 }
