@@ -10,7 +10,7 @@
 #include "STL_String/STL_String.h"
 #include "MyString/MyString.h"
 #include "STL_vector/STL_vector.h"
-#include <time.h>
+#include "MyVector/MyVector.h"
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -35,7 +35,7 @@ void TestShellSort(){
     }
     std::cout << std::endl;
 }
-
+/*
 void TestOp(){
     srand(time(0));
     const int N = 10000;
@@ -61,7 +61,8 @@ void TestOp(){
 
     free(a1);
     free(a2);
-}
+}*/
+
 
 
 int main() {
@@ -111,7 +112,8 @@ int main() {
     //Test_string2();
     //Test_string3();
     //test_vector1();
-    test_vector6();
+    //test_vector8();
+    test_my_vector1();
 
     return 0;
 }

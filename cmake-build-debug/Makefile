@@ -196,6 +196,33 @@ MyString/MyString.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.s
 .PHONY : MyString/MyString.cpp.s
 
+MyVector/MyVector.o: MyVector/MyVector.cpp.o
+
+.PHONY : MyVector/MyVector.o
+
+# target to build an object file
+MyVector/MyVector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.o
+.PHONY : MyVector/MyVector.cpp.o
+
+MyVector/MyVector.i: MyVector/MyVector.cpp.i
+
+.PHONY : MyVector/MyVector.i
+
+# target to preprocess a source file
+MyVector/MyVector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.i
+.PHONY : MyVector/MyVector.cpp.i
+
+MyVector/MyVector.s: MyVector/MyVector.cpp.s
+
+.PHONY : MyVector/MyVector.s
+
+# target to generate assembly for a file
+MyVector/MyVector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.s
+.PHONY : MyVector/MyVector.cpp.s
+
 STL_String/STL_String.o: STL_String/STL_String.cpp.o
 
 .PHONY : STL_String/STL_String.o
@@ -535,6 +562,9 @@ help:
 	@echo "... MyString/MyString.o"
 	@echo "... MyString/MyString.i"
 	@echo "... MyString/MyString.s"
+	@echo "... MyVector/MyVector.o"
+	@echo "... MyVector/MyVector.i"
+	@echo "... MyVector/MyVector.s"
 	@echo "... STL_String/STL_String.o"
 	@echo "... STL_String/STL_String.i"
 	@echo "... STL_String/STL_String.s"

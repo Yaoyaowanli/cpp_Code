@@ -22,3 +22,5 @@ void test_vector3();
 void test_vector4();
 void test_vector5();
 void test_vector6();
+void test_vector7();
+void test_vector8();

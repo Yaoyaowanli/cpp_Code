@@ -164,4 +164,63 @@ void test_vector6() {
     }
     std::cout << std::endl;
 
+
+    int a = 3;
+    int b = 5;
+    int c = a^b;
+    int lowBit = c & (-c);
+    std::cout << lowBit << std::endl;
+}
+
+void test_vector7() {
+    //迭代器失效
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+
+    vector<int>::iterator it = v.begin();
+
+    v.push_back(6);
+    v.push_back(7);
+    v.push_back(8);
+    //迭代器失效
+//    v.push_back(9);  为什么插入9就会崩溃？
+//因为这里一开始pushback了5个数据此时他的容量是8，我们定义了iterator是指向begin的
+//当我们插入9时vector会触发扩容，所以vector的空间变了，然而我们的iterator仍然指向扩容前的空间，所以发生了越界访问。
+//一些可能会扩容的操作都可能会导致迭代器失效
+
+    while(it != v.end()){
+        std::cout << *it << " ";
+        ++it;
+    }
+    std::cout << std::endl;
+}
+
+void test_vector8() {
+    //迭代器失效
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    v.push_back(6);
+    //要求删除容器中的所有偶数
+    auto it = v.begin();
+    while(it != v.end()){
+        if ((*it)%2 == 0){
+            //v.erase(it);    //erase会造成错误
+            it = v.erase(it);
+        }
+        ++it;   //这里会出现错误，因为上面如果删除了，erase就会把元素删除，然后将后面的元素向前移动，就会造成少检查一个元素，导致结果错误
+        //如果最后一个原素是要删除的元素的话会导致end前移，然后++it会导致越界
+    }
+
+    for(auto e:v){
+        std::cout << e << " ";
+    }
+    std::cout << std::endl;
 }
