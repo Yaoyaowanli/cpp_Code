@@ -10,6 +10,9 @@ CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.o: ../MyVector/MyVector.cpp
 CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.o: ../MyVector/MyVector.h
 
+CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.o: ../STL_List/STL_List.cpp
+CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.o: ../STL_List/STL_List.h
+
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.cpp
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.h
 
@@ -22,6 +25,7 @@ CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyDate/Mydate.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyVector/MyVector.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_List/STL_List.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_String/STL_String.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h

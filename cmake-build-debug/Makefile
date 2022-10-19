@@ -223,6 +223,33 @@ MyVector/MyVector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.s
 .PHONY : MyVector/MyVector.cpp.s
 
+STL_List/STL_List.o: STL_List/STL_List.cpp.o
+
+.PHONY : STL_List/STL_List.o
+
+# target to build an object file
+STL_List/STL_List.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.o
+.PHONY : STL_List/STL_List.cpp.o
+
+STL_List/STL_List.i: STL_List/STL_List.cpp.i
+
+.PHONY : STL_List/STL_List.i
+
+# target to preprocess a source file
+STL_List/STL_List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.i
+.PHONY : STL_List/STL_List.cpp.i
+
+STL_List/STL_List.s: STL_List/STL_List.cpp.s
+
+.PHONY : STL_List/STL_List.s
+
+# target to generate assembly for a file
+STL_List/STL_List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.s
+.PHONY : STL_List/STL_List.cpp.s
+
 STL_String/STL_String.o: STL_String/STL_String.cpp.o
 
 .PHONY : STL_String/STL_String.o
@@ -565,6 +592,9 @@ help:
 	@echo "... MyVector/MyVector.o"
 	@echo "... MyVector/MyVector.i"
 	@echo "... MyVector/MyVector.s"
+	@echo "... STL_List/STL_List.o"
+	@echo "... STL_List/STL_List.i"
+	@echo "... STL_List/STL_List.s"
 	@echo "... STL_String/STL_String.o"
 	@echo "... STL_String/STL_String.i"
 	@echo "... STL_String/STL_String.s"

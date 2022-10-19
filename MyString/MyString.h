@@ -42,6 +42,7 @@ void test_string2();
 namespace yaoYuan{
     class string{
     public:
+        //vector的迭代器就是指针的重新包装
         typedef char* iterator;
 
         iterator begin();
