@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/STL_List/STL_List.cpp
-STL_List.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/STL_List/STL_List.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.cpp
+myList.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/STL_List/STL_List.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
 iostream
 -
-list
--
+
+/Users/yaoyuan/C:C++_Code/cpp_Code/myList/test_my_list.cpp
+myList.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
 

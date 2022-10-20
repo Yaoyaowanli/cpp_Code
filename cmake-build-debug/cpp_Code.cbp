@@ -125,6 +125,15 @@
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/main.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myList/test_my_list.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>

@@ -12,6 +12,7 @@
 #include "STL_vector/STL_vector.h"
 #include "MyVector/MyVector.h"
 #include "STL_List/STL_List.h"
+#include "myList/myList.h"
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -115,7 +116,8 @@ int main() {
     //test_vector1();
     //test_vector8();
     //test_my_vector5();
-    testList1();
+    //testList4();
+    test_my_list1();
 
     return 0;
 }

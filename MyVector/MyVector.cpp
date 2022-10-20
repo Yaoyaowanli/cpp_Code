@@ -59,9 +59,12 @@ template<class T>const T* yaoYuan::vector<T>::end() const {
     return _finish;
 }
 
+//reserve 参数n是需要扩容至n个对象大小
 template <class T>void yaoYuan::vector<T>::reserve(size_t n) {
     if (n > capacity()){
+        //这里需要提前记录原有的数据长度。
         size_t size = this->size();
+        //开辟新空间，如果T的类型是对象的话，还会调用该对象的构造函数。
         T* tmp = new T[n];
         if(_start){
             //memcpy(tmp,_start, sizeof(T)*size);
@@ -83,6 +86,7 @@ template <class T>void yaoYuan::vector<T>::push_back(const T& x){
     }
     *_finish = x;
     ++_finish;*/
+   //可以复用insert
     insert(_finish,x);
 }
 

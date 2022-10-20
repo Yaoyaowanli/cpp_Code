@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o"
   "CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o"
   "CMakeFiles/cpp_Code.dir/main.cpp.o"
+  "CMakeFiles/cpp_Code.dir/myList/myList.cpp.o"
+  "CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.o"
   "CMakeFiles/cpp_Code.dir/no1/no1.cpp.o"
   "CMakeFiles/cpp_Code.dir/no2/no2.cpp.o"
   "CMakeFiles/cpp_Code.dir/no3/no3.cpp.o"
