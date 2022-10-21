@@ -23,27 +23,28 @@ namespace yao{
     template<class T,class Ref,class Ptr>
     struct __list_iterator{
         typedef __list_node<T> Node;
+        typedef __list_iterator<T,Ref,Ptr> Self;
         Node* _node;
 
         //构造迭代器
         __list_iterator(Node* node):_node(node){}
 
         //通过重载操作符来让迭代器可以类似于指针运算的操作
-        T& operator*();
+        Ref operator*();
 
-        __list_iterator<T>& operator++();
+        Self& operator++();
 
-        __list_iterator<T> operator++(int);
+        Self operator++(int);
 
-        __list_iterator<T>& operator--();
+        Self& operator--();
 
-        __list_iterator<T> operator--(int);
+        Self operator--(int);
 
-        bool operator!= (const __list_iterator<T>& it);
+        bool operator!= (const Self& it);
 
-        bool operator== (const __list_iterator<T>& it);
+        bool operator== (const Self& it);
 
-        T* operator-> ();
+        Ptr operator-> ();
 
     };
 
@@ -55,6 +56,12 @@ namespace yao{
         typedef __list_iterator<T,const T&,const T*> const_iterator;
         //构造函数，new一个node，让其前后都指向自己
         list();
+
+        list(const list<T>& l);
+
+        list<T>& operator= (list<T> l);
+
+        void swap(list<T>& l1,list<T>& l2);
 
         ~list();
 
@@ -74,7 +81,12 @@ namespace yao{
 
         iterator begin();
 
+        const_iterator begin()const;
+
         iterator end();
+
+        const_iterator end()const;
+
 
     private:
         Node* _head;
@@ -85,3 +97,4 @@ namespace yao{
 
 
 void test_my_list1();
+void test_my_list2();

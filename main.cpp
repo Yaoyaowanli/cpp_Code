@@ -117,7 +117,7 @@ int main() {
     //test_vector8();
     //test_my_vector5();
     //testList4();
-    test_my_list1();
+    test_my_list2();
 
     return 0;
 }

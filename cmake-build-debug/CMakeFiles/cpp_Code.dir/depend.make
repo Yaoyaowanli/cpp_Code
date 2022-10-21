@@ -42,9 +42,6 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../no7/no7.h
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.cpp
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.h
 
-CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.o: ../myList/myList.h
-CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.o: ../myList/test_my_list.cpp
-
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.cpp
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.h
 

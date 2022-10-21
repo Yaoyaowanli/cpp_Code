@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/main.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/main.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/myList/myList.cpp.o"
-  "/Users/yaoyuan/C:C++_Code/cpp_Code/myList/test_my_list.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no1/no1.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no2/no2.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no2/no2.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no3/no3.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no3/no3.cpp.o"

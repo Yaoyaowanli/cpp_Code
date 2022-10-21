@@ -385,33 +385,6 @@ myList/myList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myList/myList.cpp.s
 .PHONY : myList/myList.cpp.s
 
-myList/test_my_list.o: myList/test_my_list.cpp.o
-
-.PHONY : myList/test_my_list.o
-
-# target to build an object file
-myList/test_my_list.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.o
-.PHONY : myList/test_my_list.cpp.o
-
-myList/test_my_list.i: myList/test_my_list.cpp.i
-
-.PHONY : myList/test_my_list.i
-
-# target to preprocess a source file
-myList/test_my_list.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.i
-.PHONY : myList/test_my_list.cpp.i
-
-myList/test_my_list.s: myList/test_my_list.cpp.s
-
-.PHONY : myList/test_my_list.s
-
-# target to generate assembly for a file
-myList/test_my_list.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myList/test_my_list.cpp.s
-.PHONY : myList/test_my_list.cpp.s
-
 no1/no1.o: no1/no1.cpp.o
 
 .PHONY : no1/no1.o
@@ -664,9 +637,6 @@ help:
 	@echo "... myList/myList.o"
 	@echo "... myList/myList.i"
 	@echo "... myList/myList.s"
-	@echo "... myList/test_my_list.o"
-	@echo "... myList/test_my_list.i"
-	@echo "... myList/test_my_list.s"
 	@echo "... no1/no1.o"
 	@echo "... no1/no1.i"
 	@echo "... no1/no1.s"
