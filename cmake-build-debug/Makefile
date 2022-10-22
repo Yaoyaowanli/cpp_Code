@@ -277,6 +277,60 @@ STL_String/STL_String.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.s
 .PHONY : STL_String/STL_String.cpp.s
 
+STL_queue/STL_queue.o: STL_queue/STL_queue.cpp.o
+
+.PHONY : STL_queue/STL_queue.o
+
+# target to build an object file
+STL_queue/STL_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o
+.PHONY : STL_queue/STL_queue.cpp.o
+
+STL_queue/STL_queue.i: STL_queue/STL_queue.cpp.i
+
+.PHONY : STL_queue/STL_queue.i
+
+# target to preprocess a source file
+STL_queue/STL_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.i
+.PHONY : STL_queue/STL_queue.cpp.i
+
+STL_queue/STL_queue.s: STL_queue/STL_queue.cpp.s
+
+.PHONY : STL_queue/STL_queue.s
+
+# target to generate assembly for a file
+STL_queue/STL_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.s
+.PHONY : STL_queue/STL_queue.cpp.s
+
+STL_stack/STL_stack.o: STL_stack/STL_stack.cpp.o
+
+.PHONY : STL_stack/STL_stack.o
+
+# target to build an object file
+STL_stack/STL_stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o
+.PHONY : STL_stack/STL_stack.cpp.o
+
+STL_stack/STL_stack.i: STL_stack/STL_stack.cpp.i
+
+.PHONY : STL_stack/STL_stack.i
+
+# target to preprocess a source file
+STL_stack/STL_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.i
+.PHONY : STL_stack/STL_stack.cpp.i
+
+STL_stack/STL_stack.s: STL_stack/STL_stack.cpp.s
+
+.PHONY : STL_stack/STL_stack.s
+
+# target to generate assembly for a file
+STL_stack/STL_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.s
+.PHONY : STL_stack/STL_stack.cpp.s
+
 STL_vector/STL_vector.o: STL_vector/STL_vector.cpp.o
 
 .PHONY : STL_vector/STL_vector.o
@@ -384,6 +438,60 @@ myList/myList.s: myList/myList.cpp.s
 myList/myList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myList/myList.cpp.s
 .PHONY : myList/myList.cpp.s
+
+myQueue/my_queue.o: myQueue/my_queue.cpp.o
+
+.PHONY : myQueue/my_queue.o
+
+# target to build an object file
+myQueue/my_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o
+.PHONY : myQueue/my_queue.cpp.o
+
+myQueue/my_queue.i: myQueue/my_queue.cpp.i
+
+.PHONY : myQueue/my_queue.i
+
+# target to preprocess a source file
+myQueue/my_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.i
+.PHONY : myQueue/my_queue.cpp.i
+
+myQueue/my_queue.s: myQueue/my_queue.cpp.s
+
+.PHONY : myQueue/my_queue.s
+
+# target to generate assembly for a file
+myQueue/my_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.s
+.PHONY : myQueue/my_queue.cpp.s
+
+myStack/my_stack.o: myStack/my_stack.cpp.o
+
+.PHONY : myStack/my_stack.o
+
+# target to build an object file
+myStack/my_stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.o
+.PHONY : myStack/my_stack.cpp.o
+
+myStack/my_stack.i: myStack/my_stack.cpp.i
+
+.PHONY : myStack/my_stack.i
+
+# target to preprocess a source file
+myStack/my_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.i
+.PHONY : myStack/my_stack.cpp.i
+
+myStack/my_stack.s: myStack/my_stack.cpp.s
+
+.PHONY : myStack/my_stack.s
+
+# target to generate assembly for a file
+myStack/my_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.s
+.PHONY : myStack/my_stack.cpp.s
 
 no1/no1.o: no1/no1.cpp.o
 
@@ -625,6 +733,12 @@ help:
 	@echo "... STL_String/STL_String.o"
 	@echo "... STL_String/STL_String.i"
 	@echo "... STL_String/STL_String.s"
+	@echo "... STL_queue/STL_queue.o"
+	@echo "... STL_queue/STL_queue.i"
+	@echo "... STL_queue/STL_queue.s"
+	@echo "... STL_stack/STL_stack.o"
+	@echo "... STL_stack/STL_stack.i"
+	@echo "... STL_stack/STL_stack.s"
 	@echo "... STL_vector/STL_vector.o"
 	@echo "... STL_vector/STL_vector.i"
 	@echo "... STL_vector/STL_vector.s"
@@ -637,6 +751,12 @@ help:
 	@echo "... myList/myList.o"
 	@echo "... myList/myList.i"
 	@echo "... myList/myList.s"
+	@echo "... myQueue/my_queue.o"
+	@echo "... myQueue/my_queue.i"
+	@echo "... myQueue/my_queue.s"
+	@echo "... myStack/my_stack.o"
+	@echo "... myStack/my_stack.i"
+	@echo "... myStack/my_stack.s"
 	@echo "... no1/no1.o"
 	@echo "... no1/no1.i"
 	@echo "... no1/no1.s"

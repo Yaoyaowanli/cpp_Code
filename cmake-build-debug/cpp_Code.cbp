@@ -110,6 +110,18 @@
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_String/STL_String.h">
 			<Option target="cpp_Code"/>
 		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_queue/STL_queue.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_queue/STL_queue.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_stack/STL_stack.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_stack/STL_stack.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/STL_vector/STL_vector.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>
@@ -129,6 +141,18 @@
 			<Option target="cpp_Code"/>
 		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myStack/my_stack.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/myStack/my_stack.h">
 			<Option target="cpp_Code"/>
 		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/no1/no1.cpp">

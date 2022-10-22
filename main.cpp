@@ -13,6 +13,10 @@
 #include "MyVector/MyVector.h"
 #include "STL_List/STL_List.h"
 #include "myList/myList.h"
+#include "STL_stack/STL_stack.h"
+#include "STL_queue/STL_queue.h"
+#include "myStack/my_stack.h"
+#include "myQueue/my_queue.h"
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -117,7 +121,10 @@ int main() {
     //test_vector8();
     //test_my_vector5();
     //testList4();
-    test_my_list2();
-
+    //test_my_list2();
+    //test_stack1();
+    //test_queue1();
+    //test_my_stack1();
+    test_my_queue1();
     return 0;
 }

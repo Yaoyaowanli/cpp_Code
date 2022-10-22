@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.cpp
-myList.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.cpp
+my_queue.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h
 iostream
+-
+list
+-
+vector
 -
 

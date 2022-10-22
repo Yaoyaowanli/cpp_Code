@@ -16,6 +16,12 @@ CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.o: ../STL_List/STL_List.h
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.cpp
 CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o: ../STL_String/STL_String.h
 
+CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o: ../STL_queue/STL_queue.cpp
+CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o: ../STL_queue/STL_queue.h
+
+CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o: ../STL_stack/STL_stack.cpp
+CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o: ../STL_stack/STL_stack.h
+
 CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o: ../STL_vector/STL_vector.cpp
 CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o: ../STL_vector/STL_vector.h
 
@@ -27,10 +33,14 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyString/MyString.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyVector/MyVector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_List/STL_List.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_String/STL_String.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_queue/STL_queue.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_stack/STL_stack.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../main.cpp
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../myList/myList.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../myQueue/my_queue.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../myStack/my_stack.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no1/no1.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no2/no2.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no3/no3.h
@@ -41,6 +51,12 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../no7/no7.h
 
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.cpp
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.h
+
+CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o: ../myQueue/my_queue.cpp
+CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o: ../myQueue/my_queue.h
+
+CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.o: ../myStack/my_stack.cpp
+CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.o: ../myStack/my_stack.h
 
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.cpp
 CMakeFiles/cpp_Code.dir/no1/no1.cpp.o: ../no1/no1.h
