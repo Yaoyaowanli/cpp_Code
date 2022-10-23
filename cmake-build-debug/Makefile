@@ -763,6 +763,33 @@ string_copy/string_copy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.s
 .PHONY : string_copy/string_copy.cpp.s
 
+template/template.o: template/template.cpp.o
+
+.PHONY : template/template.o
+
+# target to build an object file
+template/template.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/template/template.cpp.o
+.PHONY : template/template.cpp.o
+
+template/template.i: template/template.cpp.i
+
+.PHONY : template/template.i
+
+# target to preprocess a source file
+template/template.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/template/template.cpp.i
+.PHONY : template/template.cpp.i
+
+template/template.s: template/template.cpp.s
+
+.PHONY : template/template.s
+
+# target to generate assembly for a file
+template/template.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/template/template.cpp.s
+.PHONY : template/template.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -841,6 +868,9 @@ help:
 	@echo "... string_copy/string_copy.o"
 	@echo "... string_copy/string_copy.i"
 	@echo "... string_copy/string_copy.s"
+	@echo "... template/template.o"
+	@echo "... template/template.i"
+	@echo "... template/template.s"
 .PHONY : help
 
 

@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/no6/no6.cpp.o"
   "CMakeFiles/cpp_Code.dir/no7/no7.cpp.o"
   "CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o"
+  "CMakeFiles/cpp_Code.dir/template/template.cpp.o"
   "cpp_Code"
   "cpp_Code.pdb"
 )
