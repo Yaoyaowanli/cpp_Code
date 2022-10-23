@@ -349,6 +349,32 @@ CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.cpp -o CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.s
 
+CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o: CMakeFiles/cpp_Code.dir/flags.make
+CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o: ../STL_priority_queue/STL_priority_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o -c /Users/yaoyuan/C:C++_Code/cpp_Code/STL_priority_queue/STL_priority_queue.cpp
+
+CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaoyuan/C:C++_Code/cpp_Code/STL_priority_queue/STL_priority_queue.cpp > CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.i
+
+CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/STL_priority_queue/STL_priority_queue.cpp -o CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.s
+
+CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o: CMakeFiles/cpp_Code.dir/flags.make
+CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o: ../MyPriorityQueue/my_priority_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o -c /Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.cpp
+
+CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.cpp > CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.i
+
+CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.cpp -o CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.s
+
 # Object files for target cpp_Code
 cpp_Code_OBJECTS = \
 "CMakeFiles/cpp_Code.dir/main.cpp.o" \
@@ -371,7 +397,9 @@ cpp_Code_OBJECTS = \
 "CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o" \
 "CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o" \
 "CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.o" \
-"CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o"
+"CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o" \
+"CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o" \
+"CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o"
 
 # External object files for target cpp_Code
 cpp_Code_EXTERNAL_OBJECTS =
@@ -397,9 +425,11 @@ cpp_Code: CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/myStack/my_stack.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o
+cpp_Code: CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o
+cpp_Code: CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/build.make
 cpp_Code: CMakeFiles/cpp_Code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable cpp_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable cpp_Code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_Code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

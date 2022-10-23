@@ -17,6 +17,8 @@
 #include "STL_queue/STL_queue.h"
 #include "myStack/my_stack.h"
 #include "myQueue/my_queue.h"
+#include "STL_priority_queue/STL_priority_queue.h"
+#include "MyPriorityQueue/my_priority_queue.h"
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -125,6 +127,8 @@ int main() {
     //test_stack1();
     //test_queue1();
     //test_my_stack1();
-    test_my_queue1();
+    //test_my_queue1();
+    //test_priority_queue1();
+    test_my_priority_queue1();
     return 0;
 }

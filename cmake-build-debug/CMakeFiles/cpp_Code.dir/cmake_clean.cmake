@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o"
+  "CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyVector/MyVector.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_List/STL_List.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o"
+  "CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o"

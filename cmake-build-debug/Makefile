@@ -169,6 +169,33 @@ MyDate/Mydate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.s
 .PHONY : MyDate/Mydate.cpp.s
 
+MyPriorityQueue/my_priority_queue.o: MyPriorityQueue/my_priority_queue.cpp.o
+
+.PHONY : MyPriorityQueue/my_priority_queue.o
+
+# target to build an object file
+MyPriorityQueue/my_priority_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o
+.PHONY : MyPriorityQueue/my_priority_queue.cpp.o
+
+MyPriorityQueue/my_priority_queue.i: MyPriorityQueue/my_priority_queue.cpp.i
+
+.PHONY : MyPriorityQueue/my_priority_queue.i
+
+# target to preprocess a source file
+MyPriorityQueue/my_priority_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.i
+.PHONY : MyPriorityQueue/my_priority_queue.cpp.i
+
+MyPriorityQueue/my_priority_queue.s: MyPriorityQueue/my_priority_queue.cpp.s
+
+.PHONY : MyPriorityQueue/my_priority_queue.s
+
+# target to generate assembly for a file
+MyPriorityQueue/my_priority_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.s
+.PHONY : MyPriorityQueue/my_priority_queue.cpp.s
+
 MyString/MyString.o: MyString/MyString.cpp.o
 
 .PHONY : MyString/MyString.o
@@ -276,6 +303,33 @@ STL_String/STL_String.s: STL_String/STL_String.cpp.s
 STL_String/STL_String.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.s
 .PHONY : STL_String/STL_String.cpp.s
+
+STL_priority_queue/STL_priority_queue.o: STL_priority_queue/STL_priority_queue.cpp.o
+
+.PHONY : STL_priority_queue/STL_priority_queue.o
+
+# target to build an object file
+STL_priority_queue/STL_priority_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o
+.PHONY : STL_priority_queue/STL_priority_queue.cpp.o
+
+STL_priority_queue/STL_priority_queue.i: STL_priority_queue/STL_priority_queue.cpp.i
+
+.PHONY : STL_priority_queue/STL_priority_queue.i
+
+# target to preprocess a source file
+STL_priority_queue/STL_priority_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.i
+.PHONY : STL_priority_queue/STL_priority_queue.cpp.i
+
+STL_priority_queue/STL_priority_queue.s: STL_priority_queue/STL_priority_queue.cpp.s
+
+.PHONY : STL_priority_queue/STL_priority_queue.s
+
+# target to generate assembly for a file
+STL_priority_queue/STL_priority_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.s
+.PHONY : STL_priority_queue/STL_priority_queue.cpp.s
 
 STL_queue/STL_queue.o: STL_queue/STL_queue.cpp.o
 
@@ -721,6 +775,9 @@ help:
 	@echo "... MyDate/Mydate.o"
 	@echo "... MyDate/Mydate.i"
 	@echo "... MyDate/Mydate.s"
+	@echo "... MyPriorityQueue/my_priority_queue.o"
+	@echo "... MyPriorityQueue/my_priority_queue.i"
+	@echo "... MyPriorityQueue/my_priority_queue.s"
 	@echo "... MyString/MyString.o"
 	@echo "... MyString/MyString.i"
 	@echo "... MyString/MyString.s"
@@ -733,6 +790,9 @@ help:
 	@echo "... STL_String/STL_String.o"
 	@echo "... STL_String/STL_String.i"
 	@echo "... STL_String/STL_String.s"
+	@echo "... STL_priority_queue/STL_priority_queue.o"
+	@echo "... STL_priority_queue/STL_priority_queue.i"
+	@echo "... STL_priority_queue/STL_priority_queue.s"
 	@echo "... STL_queue/STL_queue.o"
 	@echo "... STL_queue/STL_queue.i"
 	@echo "... STL_queue/STL_queue.s"

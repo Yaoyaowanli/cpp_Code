@@ -6,14 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.cpp
-my_queue.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.cpp
+my_priority_queue.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.h
 iostream
--
-list
 -
 vector
 -
