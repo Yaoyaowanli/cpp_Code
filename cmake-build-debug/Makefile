@@ -817,6 +817,33 @@ template/template.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/template/template.cpp.s
 .PHONY : template/template.cpp.s
 
+virtual/virtual.o: virtual/virtual.cpp.o
+
+.PHONY : virtual/virtual.o
+
+# target to build an object file
+virtual/virtual.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o
+.PHONY : virtual/virtual.cpp.o
+
+virtual/virtual.i: virtual/virtual.cpp.i
+
+.PHONY : virtual/virtual.i
+
+# target to preprocess a source file
+virtual/virtual.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.i
+.PHONY : virtual/virtual.cpp.i
+
+virtual/virtual.s: virtual/virtual.cpp.s
+
+.PHONY : virtual/virtual.s
+
+# target to generate assembly for a file
+virtual/virtual.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.s
+.PHONY : virtual/virtual.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -901,6 +928,9 @@ help:
 	@echo "... template/template.o"
 	@echo "... template/template.i"
 	@echo "... template/template.s"
+	@echo "... virtual/virtual.o"
+	@echo "... virtual/virtual.i"
+	@echo "... virtual/virtual.s"
 .PHONY : help
 
 

@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.cpp
-inheritance.h
-/Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.cpp
+virtual.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.h
 
-/Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.h
+/Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.h
 iostream
--
-string
 -
 

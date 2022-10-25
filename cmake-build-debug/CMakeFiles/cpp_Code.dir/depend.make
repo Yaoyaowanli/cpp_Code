@@ -61,6 +61,7 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../no5/no5.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no6/no6.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../no7/no7.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../template/template.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../virtual/virtual.h
 
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.cpp
 CMakeFiles/cpp_Code.dir/myList/myList.cpp.o: ../myList/myList.h
@@ -97,4 +98,7 @@ CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o: ../string_copy/string_cop
 
 CMakeFiles/cpp_Code.dir/template/template.cpp.o: ../template/template.cpp
 CMakeFiles/cpp_Code.dir/template/template.cpp.o: ../template/template.h
+
+CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o: ../virtual/virtual.cpp
+CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o: ../virtual/virtual.h
 

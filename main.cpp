@@ -21,6 +21,9 @@
 #include "MyPriorityQueue/my_priority_queue.h"
 #include "template/template.h"
 #include "inheritance/inheritance.h"
+#include "virtual/virtual.h"
+
+
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -134,6 +137,7 @@ int main() {
     //test_my_priority_queue1();
     //test_template1();
     //test_inheritance1();
-    test_inheritance4();
+    //test_inheritance4();
+    test_virtual_2();
     return 0;
 }

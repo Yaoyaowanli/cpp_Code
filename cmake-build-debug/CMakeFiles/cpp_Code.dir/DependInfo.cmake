@@ -29,6 +29,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/yaoyuan/C:C++_Code/cpp_Code/no7/no7.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/no7/no7.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/string_copy/string_copy.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o"
   "/Users/yaoyuan/C:C++_Code/cpp_Code/template/template.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/template/template.cpp.o"
+  "/Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.cpp" "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
