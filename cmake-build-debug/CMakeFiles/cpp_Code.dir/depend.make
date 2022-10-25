@@ -34,6 +34,9 @@ CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.cpp
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o: ../Sort/Sort.h
 
+CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o: ../inheritance/inheritance.cpp
+CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o: ../inheritance/inheritance.h
+
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyDate/Mydate.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyPriorityQueue/my_priority_queue.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../MyString/MyString.h
@@ -45,6 +48,7 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_queue/STL_queue.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_stack/STL_stack.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../inheritance/inheritance.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../main.cpp
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../myList/myList.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../myQueue/my_queue.h

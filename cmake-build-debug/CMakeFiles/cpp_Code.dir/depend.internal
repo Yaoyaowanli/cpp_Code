@@ -34,6 +34,9 @@ CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o
 CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o
  /Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.cpp
  /Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.h
+CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o
+ /Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.cpp
+ /Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.h
 CMakeFiles/cpp_Code.dir/main.cpp.o
  /Users/yaoyuan/C:C++_Code/cpp_Code/MyDate/Mydate.h
  /Users/yaoyuan/C:C++_Code/cpp_Code/MyPriorityQueue/my_priority_queue.h
@@ -46,6 +49,7 @@ CMakeFiles/cpp_Code.dir/main.cpp.o
  /Users/yaoyuan/C:C++_Code/cpp_Code/STL_stack/STL_stack.h
  /Users/yaoyuan/C:C++_Code/cpp_Code/STL_vector/STL_vector.h
  /Users/yaoyuan/C:C++_Code/cpp_Code/Sort/Sort.h
+ /Users/yaoyuan/C:C++_Code/cpp_Code/inheritance/inheritance.h
  /Users/yaoyuan/C:C++_Code/cpp_Code/main.cpp
  /Users/yaoyuan/C:C++_Code/cpp_Code/myList/myList.h
  /Users/yaoyuan/C:C++_Code/cpp_Code/myQueue/my_queue.h

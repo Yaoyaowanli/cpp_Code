@@ -439,6 +439,33 @@ Sort/Sort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.s
 .PHONY : Sort/Sort.cpp.s
 
+inheritance/inheritance.o: inheritance/inheritance.cpp.o
+
+.PHONY : inheritance/inheritance.o
+
+# target to build an object file
+inheritance/inheritance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o
+.PHONY : inheritance/inheritance.cpp.o
+
+inheritance/inheritance.i: inheritance/inheritance.cpp.i
+
+.PHONY : inheritance/inheritance.i
+
+# target to preprocess a source file
+inheritance/inheritance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.i
+.PHONY : inheritance/inheritance.cpp.i
+
+inheritance/inheritance.s: inheritance/inheritance.cpp.s
+
+.PHONY : inheritance/inheritance.s
+
+# target to generate assembly for a file
+inheritance/inheritance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.s
+.PHONY : inheritance/inheritance.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -832,6 +859,9 @@ help:
 	@echo "... Sort/Sort.o"
 	@echo "... Sort/Sort.i"
 	@echo "... Sort/Sort.s"
+	@echo "... inheritance/inheritance.o"
+	@echo "... inheritance/inheritance.i"
+	@echo "... inheritance/inheritance.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

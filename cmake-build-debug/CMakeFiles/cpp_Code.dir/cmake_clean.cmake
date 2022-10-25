@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o"
   "CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o"
+  "CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o"
   "CMakeFiles/cpp_Code.dir/main.cpp.o"
   "CMakeFiles/cpp_Code.dir/myList/myList.cpp.o"
   "CMakeFiles/cpp_Code.dir/myQueue/my_queue.cpp.o"
