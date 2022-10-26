@@ -71,3 +71,70 @@ void test_virtual_2(){
     // 问题：person_test1* p2 = new student_test1，他切割后的权限只有person，为什么可以调用student的析构呢？
     // 因为重写destructor函数后就构成多态了，虚函数的调用和他的类型无关，执行的是其指向的对象的类型的虚函数。
 }
+
+
+
+//多态的原理
+//问题：sizeof（base）是多少？
+class base1{
+public:
+    virtual void Func1(){
+        cout << "Func1()" << endl;
+    }
+private:
+    int _b = 1 ;
+};
+
+void test_virtual_3(){
+    base1 b1;
+    cout << sizeof(b1) << endl;
+
+    //我们发现这里是16个字节，因为base除了他的数据_b 4字节还存了一个叫做 _vftptr(virtual function table pointer)
+    //即虚函数表指针，我是x64 指针8字节，内存对齐后为16字节
+    //那么什么是虚函数表指针呢？
+    //虚函数表指针其实就是一个指向虚函数的指针数组
+}
+
+
+
+
+
+//遍历虚函数表，打印
+class base{
+public:
+    virtual void func1(){ cout << "base::func1() " << endl;}
+    virtual void func2(){ cout << "base::func2() " << endl; }
+private:
+    int _a;
+};
+
+class derive : public base {
+public:
+    virtual void func1(){ cout << "derive::func1() " << endl; }
+    virtual void func3(){ cout << "derive::func3() " << endl; }
+    virtual void func4(){ cout << "derive::func4() " << endl; }
+private:
+    int _b;
+};
+
+//typedef 了函数指针
+typedef void(*VF_PTR)();
+
+void PrintVFTable(VF_PTR *pTable){
+    for(size_t i=0; pTable[i]!= 0 ;i++){
+        printf("virtual function table[%d]: %p->",i,pTable[i]);
+        VF_PTR p = pTable[i];
+        p();
+    }
+    cout << endl;
+}
+
+void test_virtual_4() {
+    base b1;
+    derive d1;
+    cout << sizeof(void*) << endl;
+
+    PrintVFTable((VF_PTR*)(*(long long*)&d1));
+    PrintVFTable((VF_PTR*)(*(long long*)&b1));
+
+}

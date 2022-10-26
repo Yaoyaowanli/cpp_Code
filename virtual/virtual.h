@@ -20,4 +20,6 @@ using namespace std;
 
 void test_virtual_1();
 void test_virtual_2();
+void test_virtual_3();
+void test_virtual_4();
 

@@ -138,6 +138,6 @@ int main() {
     //test_template1();
     //test_inheritance1();
     //test_inheritance4();
-    test_virtual_2();
+    test_virtual_4();
     return 0;
 }
