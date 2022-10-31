@@ -142,6 +142,60 @@ cpp_Code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/build
 .PHONY : cpp_Code/fast
 
+BSTree/BSTree.o: BSTree/BSTree.cpp.o
+
+.PHONY : BSTree/BSTree.o
+
+# target to build an object file
+BSTree/BSTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o
+.PHONY : BSTree/BSTree.cpp.o
+
+BSTree/BSTree.i: BSTree/BSTree.cpp.i
+
+.PHONY : BSTree/BSTree.i
+
+# target to preprocess a source file
+BSTree/BSTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.i
+.PHONY : BSTree/BSTree.cpp.i
+
+BSTree/BSTree.s: BSTree/BSTree.cpp.s
+
+.PHONY : BSTree/BSTree.s
+
+# target to generate assembly for a file
+BSTree/BSTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.s
+.PHONY : BSTree/BSTree.cpp.s
+
+BSTree_key_value/BSTree_key_value.o: BSTree_key_value/BSTree_key_value.cpp.o
+
+.PHONY : BSTree_key_value/BSTree_key_value.o
+
+# target to build an object file
+BSTree_key_value/BSTree_key_value.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o
+.PHONY : BSTree_key_value/BSTree_key_value.cpp.o
+
+BSTree_key_value/BSTree_key_value.i: BSTree_key_value/BSTree_key_value.cpp.i
+
+.PHONY : BSTree_key_value/BSTree_key_value.i
+
+# target to preprocess a source file
+BSTree_key_value/BSTree_key_value.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.i
+.PHONY : BSTree_key_value/BSTree_key_value.cpp.i
+
+BSTree_key_value/BSTree_key_value.s: BSTree_key_value/BSTree_key_value.cpp.s
+
+.PHONY : BSTree_key_value/BSTree_key_value.s
+
+# target to generate assembly for a file
+BSTree_key_value/BSTree_key_value.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.s
+.PHONY : BSTree_key_value/BSTree_key_value.cpp.s
+
 MyDate/Mydate.o: MyDate/Mydate.cpp.o
 
 .PHONY : MyDate/Mydate.o
@@ -817,6 +871,33 @@ template/template.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/template/template.cpp.s
 .PHONY : template/template.cpp.s
 
+test_Effectivecpp_1/test_effectivecpp_1.o: test_Effectivecpp_1/test_effectivecpp_1.cpp.o
+
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.o
+
+# target to build an object file
+test_Effectivecpp_1/test_effectivecpp_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.cpp.o
+
+test_Effectivecpp_1/test_effectivecpp_1.i: test_Effectivecpp_1/test_effectivecpp_1.cpp.i
+
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.i
+
+# target to preprocess a source file
+test_Effectivecpp_1/test_effectivecpp_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.i
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.cpp.i
+
+test_Effectivecpp_1/test_effectivecpp_1.s: test_Effectivecpp_1/test_effectivecpp_1.cpp.s
+
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.s
+
+# target to generate assembly for a file
+test_Effectivecpp_1/test_effectivecpp_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.s
+.PHONY : test_Effectivecpp_1/test_effectivecpp_1.cpp.s
+
 virtual/virtual.o: virtual/virtual.cpp.o
 
 .PHONY : virtual/virtual.o
@@ -853,6 +934,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Code"
+	@echo "... BSTree/BSTree.o"
+	@echo "... BSTree/BSTree.i"
+	@echo "... BSTree/BSTree.s"
+	@echo "... BSTree_key_value/BSTree_key_value.o"
+	@echo "... BSTree_key_value/BSTree_key_value.i"
+	@echo "... BSTree_key_value/BSTree_key_value.s"
 	@echo "... MyDate/Mydate.o"
 	@echo "... MyDate/Mydate.i"
 	@echo "... MyDate/Mydate.s"
@@ -928,6 +1015,9 @@ help:
 	@echo "... template/template.o"
 	@echo "... template/template.i"
 	@echo "... template/template.s"
+	@echo "... test_Effectivecpp_1/test_effectivecpp_1.o"
+	@echo "... test_Effectivecpp_1/test_effectivecpp_1.i"
+	@echo "... test_Effectivecpp_1/test_effectivecpp_1.s"
 	@echo "... virtual/virtual.o"
 	@echo "... virtual/virtual.i"
 	@echo "... virtual/virtual.s"

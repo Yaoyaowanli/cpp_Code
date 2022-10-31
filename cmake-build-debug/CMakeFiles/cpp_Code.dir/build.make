@@ -414,6 +414,45 @@ CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.cpp -o CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.s
 
+CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o: CMakeFiles/cpp_Code.dir/flags.make
+CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o: ../test_Effectivecpp_1/test_effectivecpp_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o -c /Users/yaoyuan/C:C++_Code/cpp_Code/test_Effectivecpp_1/test_effectivecpp_1.cpp
+
+CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaoyuan/C:C++_Code/cpp_Code/test_Effectivecpp_1/test_effectivecpp_1.cpp > CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.i
+
+CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/test_Effectivecpp_1/test_effectivecpp_1.cpp -o CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.s
+
+CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o: CMakeFiles/cpp_Code.dir/flags.make
+CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o: ../BSTree/BSTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o -c /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.cpp
+
+CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.cpp > CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.i
+
+CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.cpp -o CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.s
+
+CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o: CMakeFiles/cpp_Code.dir/flags.make
+CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o: ../BSTree_key_value/BSTree_key_value.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o -c /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree_key_value/BSTree_key_value.cpp
+
+CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree_key_value/BSTree_key_value.cpp > CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.i
+
+CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaoyuan/C:C++_Code/cpp_Code/BSTree_key_value/BSTree_key_value.cpp -o CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.s
+
 # Object files for target cpp_Code
 cpp_Code_OBJECTS = \
 "CMakeFiles/cpp_Code.dir/main.cpp.o" \
@@ -441,7 +480,10 @@ cpp_Code_OBJECTS = \
 "CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o" \
 "CMakeFiles/cpp_Code.dir/template/template.cpp.o" \
 "CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o" \
-"CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o"
+"CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o" \
+"CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o" \
+"CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o" \
+"CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o"
 
 # External object files for target cpp_Code
 cpp_Code_EXTERNAL_OBJECTS =
@@ -472,9 +514,12 @@ cpp_Code: CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/template/template.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/inheritance/inheritance.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o
+cpp_Code: CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o
+cpp_Code: CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o
+cpp_Code: CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o
 cpp_Code: CMakeFiles/cpp_Code.dir/build.make
 cpp_Code: CMakeFiles/cpp_Code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable cpp_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable cpp_Code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_Code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

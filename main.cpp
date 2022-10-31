@@ -22,7 +22,8 @@
 #include "template/template.h"
 #include "inheritance/inheritance.h"
 #include "virtual/virtual.h"
-
+#include "test_Effectivecpp_1/test_effectivecpp_1.h"
+#include "BSTree_key_value/BSTree_key_value.h"
 
 
 void TestInsertSort(){
@@ -138,6 +139,9 @@ int main() {
     //test_template1();
     //test_inheritance1();
     //test_inheritance4();
-    test_virtual_4();
+    //test_virtual_4();
+    //test_GamePlayer();
+    //test_BSTree_1();
+    test_BSTree_key_value1();
     return 0;
 }

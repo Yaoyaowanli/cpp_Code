@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cpp_Code.dir/BSTree/BSTree.cpp.o"
+  "CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o"
@@ -24,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/no7/no7.cpp.o"
   "CMakeFiles/cpp_Code.dir/string_copy/string_copy.cpp.o"
   "CMakeFiles/cpp_Code.dir/template/template.cpp.o"
+  "CMakeFiles/cpp_Code.dir/test_Effectivecpp_1/test_effectivecpp_1.cpp.o"
   "CMakeFiles/cpp_Code.dir/virtual/virtual.cpp.o"
   "cpp_Code"
   "cpp_Code.pdb"

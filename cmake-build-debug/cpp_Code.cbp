@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/BSTree_key_value/BSTree_key_value.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/BSTree_key_value/BSTree_key_value.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/MyDate/Mydate.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>
@@ -225,6 +237,12 @@
 			<Option target="cpp_Code"/>
 		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/template/template.h">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/test_Effectivecpp_1/test_effectivecpp_1.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/test_Effectivecpp_1/test_effectivecpp_1.h">
 			<Option target="cpp_Code"/>
 		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/virtual/virtual.cpp">
