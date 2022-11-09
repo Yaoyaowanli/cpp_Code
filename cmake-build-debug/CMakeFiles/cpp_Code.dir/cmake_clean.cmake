@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/STL_String/STL_String.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o"
+  "CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o"
   "CMakeFiles/cpp_Code.dir/STL_vector/STL_vector.cpp.o"
   "CMakeFiles/cpp_Code.dir/Sort/Sort.cpp.o"

@@ -24,11 +24,11 @@ struct BSTreeNode{
 template<class K,class V>
 class BSTree{
     typedef BSTreeNode<K,V> Node;
-    void _InOrder(Node* root);
+    void _InOrder(Node* root)const;
 
 public:
     bool Insert(const K& key,const V& value);
-    void InOrder();
+    void InOrder()const;
     Node* Find(const K& key);
     bool Erase(const K& key);
 
@@ -82,13 +82,13 @@ bool BSTree<K,V>::Insert(const K &key,const V& value) {
 }
 
 template<class K,class V>
-void BSTree<K,V>::InOrder() {
+void BSTree<K,V>::InOrder()const {
     _InOrder(_root);
     std::cout << std::endl;
 }
 
 template<class K,class V>
-void BSTree<K,V>::_InOrder(Node *root) {
+void BSTree<K,V>::_InOrder(Node *root)const{
     if (root == nullptr){
         return;
     }

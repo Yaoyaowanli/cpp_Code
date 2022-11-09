@@ -412,6 +412,33 @@ STL_queue/STL_queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.s
 .PHONY : STL_queue/STL_queue.cpp.s
 
+STL_set/STL_set.o: STL_set/STL_set.cpp.o
+
+.PHONY : STL_set/STL_set.o
+
+# target to build an object file
+STL_set/STL_set.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.o
+.PHONY : STL_set/STL_set.cpp.o
+
+STL_set/STL_set.i: STL_set/STL_set.cpp.i
+
+.PHONY : STL_set/STL_set.i
+
+# target to preprocess a source file
+STL_set/STL_set.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.i
+.PHONY : STL_set/STL_set.cpp.i
+
+STL_set/STL_set.s: STL_set/STL_set.cpp.s
+
+.PHONY : STL_set/STL_set.s
+
+# target to generate assembly for a file
+STL_set/STL_set.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.s
+.PHONY : STL_set/STL_set.cpp.s
+
 STL_stack/STL_stack.o: STL_stack/STL_stack.cpp.o
 
 .PHONY : STL_stack/STL_stack.o
@@ -964,6 +991,9 @@ help:
 	@echo "... STL_queue/STL_queue.o"
 	@echo "... STL_queue/STL_queue.i"
 	@echo "... STL_queue/STL_queue.s"
+	@echo "... STL_set/STL_set.o"
+	@echo "... STL_set/STL_set.i"
+	@echo "... STL_set/STL_set.s"
 	@echo "... STL_stack/STL_stack.o"
 	@echo "... STL_stack/STL_stack.i"
 	@echo "... STL_stack/STL_stack.s"

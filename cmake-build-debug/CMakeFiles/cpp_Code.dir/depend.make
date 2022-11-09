@@ -31,6 +31,9 @@ CMakeFiles/cpp_Code.dir/STL_priority_queue/STL_priority_queue.cpp.o: ../STL_prio
 CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o: ../STL_queue/STL_queue.cpp
 CMakeFiles/cpp_Code.dir/STL_queue/STL_queue.cpp.o: ../STL_queue/STL_queue.h
 
+CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.o: ../STL_set/STL_set.cpp
+CMakeFiles/cpp_Code.dir/STL_set/STL_set.cpp.o: ../STL_set/STL_set.h
+
 CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o: ../STL_stack/STL_stack.cpp
 CMakeFiles/cpp_Code.dir/STL_stack/STL_stack.cpp.o: ../STL_stack/STL_stack.h
 
@@ -52,6 +55,7 @@ CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_List/STL_List.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_String/STL_String.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_priority_queue/STL_priority_queue.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_queue/STL_queue.h
+CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_set/STL_set.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_stack/STL_stack.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../STL_vector/STL_vector.h
 CMakeFiles/cpp_Code.dir/main.cpp.o: ../Sort/Sort.h
