@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/AVLTree/AVLTree.cpp">
+			<Option target="cpp_Code"/>
+		</Unit>
+		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/AVLTree/AVLTree.h">
+			<Option target="cpp_Code"/>
+		</Unit>
 		<Unit filename="/Users/yaoyuan/C:C++_Code/cpp_Code/BSTree/BSTree.cpp">
 			<Option target="cpp_Code"/>
 		</Unit>

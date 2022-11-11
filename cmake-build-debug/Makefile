@@ -142,6 +142,33 @@ cpp_Code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/build
 .PHONY : cpp_Code/fast
 
+AVLTree/AVLTree.o: AVLTree/AVLTree.cpp.o
+
+.PHONY : AVLTree/AVLTree.o
+
+# target to build an object file
+AVLTree/AVLTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/AVLTree/AVLTree.cpp.o
+.PHONY : AVLTree/AVLTree.cpp.o
+
+AVLTree/AVLTree.i: AVLTree/AVLTree.cpp.i
+
+.PHONY : AVLTree/AVLTree.i
+
+# target to preprocess a source file
+AVLTree/AVLTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/AVLTree/AVLTree.cpp.i
+.PHONY : AVLTree/AVLTree.cpp.i
+
+AVLTree/AVLTree.s: AVLTree/AVLTree.cpp.s
+
+.PHONY : AVLTree/AVLTree.s
+
+# target to generate assembly for a file
+AVLTree/AVLTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/AVLTree/AVLTree.cpp.s
+.PHONY : AVLTree/AVLTree.cpp.s
+
 BSTree/BSTree.o: BSTree/BSTree.cpp.o
 
 .PHONY : BSTree/BSTree.o
@@ -961,6 +988,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Code"
+	@echo "... AVLTree/AVLTree.o"
+	@echo "... AVLTree/AVLTree.i"
+	@echo "... AVLTree/AVLTree.s"
 	@echo "... BSTree/BSTree.o"
 	@echo "... BSTree/BSTree.i"
 	@echo "... BSTree/BSTree.s"
