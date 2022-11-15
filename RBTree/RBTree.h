@@ -24,7 +24,7 @@ struct RBTreeNode{
     RBTreeNode<K,V>* _right;
     RBTreeNode<K,V>* _parent;
 
-    std::pair<K,V> _kv;
+    std::pair<K,V> _kv;         //kv键值对
     Colour _col;
 };
 

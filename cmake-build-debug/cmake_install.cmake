@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yaoyuan/C:C++_Code/cpp_Code
+# Install script for directory: /Users/yaoyuan/Code/C:Cpp_Code/Cpp_Code/cpp_Code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/yaoyuan/C:C++_Code/cpp_Code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/yaoyuan/Code/C:Cpp_Code/Cpp_Code/cpp_Code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
