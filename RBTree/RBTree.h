@@ -97,20 +97,22 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
                 //迭代
                 cur = grandfather;
                 parent = grandfather->_parent;
+            }else{
+                //情况2 or 情况3 ： uncle不存在 ｜｜ uncle存在且为黑
+                //情况3：双旋->变为单旋
+                if (cur == parent->_right){
+                    RotateL(parent);
+                    std::swap(parent,cur);
+                }
+
+                //第二种情况（有可能是第三种情况变过来的）
+                RotateR(grandfather);
+                grandfather->_col = RED;
+                parent->_col = BLACK;
+                break;
             }
         }else{
-            //情况2 or 情况3 ： uncle不存在 ｜｜ uncle存在且为黑
-            //情况3：双旋->变为单旋
-            if (cur == parent->_right){
-                RotateL(parent);
-                std::swap(parent,cur);
-            }
 
-            //第二种情况（有可能是第三种情况变过来的）
-            RotateR(grandfather);
-            grandfather->_col = RED;
-            parent->_col = BLACK;
-            break;
         }
     }
 
