@@ -88,6 +88,7 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
         //红黑树的调节关键看uncle
         Node* grandfather = parent->_parent;
         if (grandfather->_left == parent){
+            //parent 在 grandfather的左子树，uncle在右子树的大情况：
             Node* uncle = grandfather->_right;
             //情况1：uncle存在且为红，就将parent和uncle变黑，grandfather变红
             if (uncle && uncle->_col == RED){
@@ -100,6 +101,8 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
             }else{
                 //情况2 or 情况3 ： uncle不存在 ｜｜ uncle存在且为黑
                 //情况3：双旋->变为单旋
+                //这里parent在grandfather的左子树，如果cur在parent的右边，就需要做左右双旋，这里先做了左旋，再交换了parent和cur
+                //将双旋的情况转换为单弦
                 if (cur == parent->_right){
                     RotateL(parent);
                     std::swap(parent,cur);
@@ -112,7 +115,31 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
                 break;
             }
         }else{
+            //parent 在 grandfather的右子树，uncle在左子树的大情况：
+            Node* uncle = grandfather->_left;
+            //情况1：uncle存在且为红，就将parent和uncle变黑，grandfather变红
+            if (uncle && uncle->_col == RED){
+                parent->_col = BLACK;
+                uncle->_col = BLACK;
+                grandfather->_col = RED;
+                //迭代
+                cur = grandfather;
+                parent = grandfather->_parent;
+            }else{
+                //情况2 or 情况3 ：uncle不存在 ｜｜ uncle存在且为黑
+                //这里parent在grandfather的右子树，如果cur在parent的左边，就需要做右左双旋，这里先做了右旋，再交换了parent和cur
+                //将双旋的情况转换为单弦
+                if (cur == parent->_left){
+                    RotateR(parent);
+                    std::swap(parent,cur);
+                }
 
+                //第二种情况（有可能是第三种情况变过来的）
+                RotateL(grandfather);
+                grandfather->_col = RED;
+                parent->_col = BLACK;
+                break;
+            }
         }
     }
 
