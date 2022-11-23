@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Code.dir/BSTree_key_value/BSTree_key_value.cpp.o.d"
   "CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.o.d"
+  "CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.o"
+  "CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.o.d"
   "CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o"
   "CMakeFiles/cpp_Code.dir/MyPriorityQueue/my_priority_queue.cpp.o.d"
   "CMakeFiles/cpp_Code.dir/MyString/MyString.cpp.o"

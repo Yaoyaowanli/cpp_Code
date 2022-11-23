@@ -33,8 +33,15 @@ template<class K,class V>
 class RBTree{
     typedef RBTreeNode<K,V> Node;
 public:
-    bool insert(const std::pair<K,V>& kv);
+    bool Insert(const std::pair<K,V>& kv);
+    void InOrder()const;
+    bool IsValidRBTree();
+    Node* Find(const K& key);
 private:
+    bool _IsValidRBTree(RBTreeNode<K,V>* root,size_t k,size_t BlackNode_count);
+    void rotateL(Node* parent);
+    void rotateR(Node* parent);
+    void _InOrder(Node *root)const;
     Node* _root = nullptr;
 };
 
@@ -44,11 +51,11 @@ RBTreeNode<K,V>::RBTreeNode(const std::pair<K,V>& kv)
 _parent(nullptr),
 _left(nullptr),
 _kv(kv),
-_col(BLACK)
+_col(RED)
 {}
 
 template<class K,class V>
-bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
+bool RBTree<K, V>::Insert(const std::pair<K, V> &kv) {
     //1、按照二叉搜索树的规则插入
     //1.1、如果当前红黑树为空树，构造节点为root
     if (_root == nullptr){
@@ -59,31 +66,31 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
     Node* cur = _root;
     Node* parent = nullptr;
     while (cur){
-        if (cur->_kv.first == kv.first){
-            return false;
-        }
         if (cur->_kv.first > kv.first){
             parent = cur;
             cur = cur->_left;
-        }
-        if (cur->_kv.first < kv.first){
+        }else if (cur->_kv.first < kv.first){
             parent = cur;
             cur = cur->_right;
+        } else {
+            return false;
         }
     }
     //1.2、cur已经找到了空位置,判断cur应该插入在parent的左边还是右边.
     cur = new Node(kv);
     if (parent->_kv.first > kv.first){
-        cur ->_parent = parent;
         parent->_left = cur;
+        cur ->_parent = parent;
     }else{
-        cur->_parent = parent;
         parent->_right = cur;
+        cur->_parent = parent;
     }
     //新插入的节点默认为红色，因为默认为黑色的话会改变路径上黑色节点的数量，不好控制
     cur->_col = RED;
     //如果新插入节点cur的parent是红色，那么他的grandfather一定是黑色，这个时候我们通过变色来保持红黑树
-
+    if (parent == _root){
+        return true;
+    }
     while (parent && parent->_col == RED){
         //红黑树的调节关键看uncle
         Node* grandfather = parent->_parent;
@@ -104,12 +111,12 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
                 //这里parent在grandfather的左子树，如果cur在parent的右边，就需要做左右双旋，这里先做了左旋，再交换了parent和cur
                 //将双旋的情况转换为单弦
                 if (cur == parent->_right){
-                    RotateL(parent);
+                    rotateL(parent);
                     std::swap(parent,cur);
                 }
 
                 //第二种情况（有可能是第三种情况变过来的）
-                RotateR(grandfather);
+                rotateR(grandfather);
                 grandfather->_col = RED;
                 parent->_col = BLACK;
                 break;
@@ -130,12 +137,12 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
                 //这里parent在grandfather的右子树，如果cur在parent的左边，就需要做右左双旋，这里先做了右旋，再交换了parent和cur
                 //将双旋的情况转换为单弦
                 if (cur == parent->_left){
-                    RotateR(parent);
+                    rotateR(parent);
                     std::swap(parent,cur);
                 }
 
                 //第二种情况（有可能是第三种情况变过来的）
-                RotateL(grandfather);
+                rotateL(grandfather);
                 grandfather->_col = RED;
                 parent->_col = BLACK;
                 break;
@@ -143,7 +150,154 @@ bool RBTree<K, V>::insert(const std::pair<K, V> &kv) {
         }
     }
 
-        //反方向
-
     _root->_col = BLACK;
+    return true;
 }
+
+template<class K,class V>
+void RBTree<K,V>::rotateL(Node *parent) {
+    //左单旋
+    Node* ppNode = parent->_parent;     //提前保存parent的父节点，有可能是null
+    Node* subR = parent->_right;
+    Node* subRL = subR->_left;
+    //首先让parent的right(原本指向的是subR)指向subR的左边（也就是subRL）
+    parent->_right = subRL;
+    //这里subRL有可能是nullptr
+    if (subRL){
+        //如果不为空，就让subRL的父指向parent
+        subRL->_parent = parent;
+    }
+    subR->_left = parent;
+    parent->_parent = subR;
+    //到这里已经完成了问题子树的旋转。但是问题子树不代表整颗AVL树，上面可能还有节点
+    //有两种情况
+    //1、parent就是整颗树的root节点，旋转完成后subR应该成为新的root节点
+    if (_root == parent){
+        _root = subR;
+        subR->_parent = nullptr;
+    }else{
+        //2、parent不是整棵树的root，那么subR就应该指向最开始parent-》parent，且parent-》parent 应该指向subR
+        if (ppNode->_left == parent){
+            ppNode->_left = subR;
+        }else{
+            ppNode->_right = subR;
+        }
+        subR->_parent = ppNode;
+    }
+}
+
+template<class K,class V>
+void RBTree<K,V>::rotateR(Node *parent) {
+    //右单旋
+    Node* ppNode = parent->_parent;
+    Node* subL = parent->_left;
+    Node* subLR = subL->_right;
+
+    parent->_left = subLR;
+    if (subLR){
+        subLR->_parent = parent;
+    }
+    subL->_right = parent;
+    parent->_parent = subL;
+
+    if (_root == parent){
+        _root = subL;
+        subL->_parent = nullptr;
+    }else{
+        if (ppNode->_left == parent){
+            ppNode->_left = subL;
+        }else{
+            ppNode->_right = subL;
+        }
+        subL->_parent = ppNode;
+    }
+}
+
+template<class K,class V>
+void RBTree<K,V>::InOrder()const {
+    _InOrder(_root);
+    std::cout << std::endl;
+}
+
+template<class K,class V>
+void RBTree<K,V>::_InOrder(Node *root)const{
+    if (root == nullptr){
+        return;
+    }
+    _InOrder(root->_left);
+    std::cout << root->_kv.first << " : " << root->_kv.second << std::endl;
+    _InOrder(root->_right);
+}
+
+template<class K,class V>
+bool RBTree<K,V>::IsValidRBTree() {
+    //检测一棵树是不是红黑树：
+    //1、检测其中续遍历是否是有序的
+    //2、检测其是否满足红黑树的性质
+    //空树也是红黑树
+    if (_root == nullptr){
+        return true;
+    }
+    //红黑树的根节点必须是黑色
+    if(_root->_col != BLACK){
+        std::cout << "error: _root->_col must be BLACK !" << std::endl;
+        return false;
+    }
+    //获取任意一条路径中的黑色节点数量
+    size_t BlackNode_count = 0;
+    Node* cur = _root;
+    while(cur){
+        if (cur->_col == BLACK){
+            BlackNode_count++;
+        }
+        cur = cur->_left;
+    }
+    //k用来记录路径中黑色节点的个数
+    size_t k = 0;
+    return _IsValidRBTree(_root,k,BlackNode_count);
+}
+
+
+template<class K,class V>
+bool RBTree<K,V>::_IsValidRBTree(RBTreeNode<K,V>* root,size_t k,size_t BlackNode_count) {
+    //走到null之后，判断k和blackNode_count是否相等
+    if (root == nullptr){
+        if (k != BlackNode_count){
+            std::cout << "error : 路径中黑色节点的数量不一致" << std::endl;
+            return false;
+        }
+        return true;
+    }
+
+    //统计黑色节点数量
+    if (root->_col == BLACK){
+        k++;
+    }
+
+    //当前节点如果为红色，检测其父亲节点是否为红色
+    Node* parent = root->_parent;
+    if (parent && parent->_col == RED && root->_col == RED){
+        std::cout << "error：parent->col == cur->_col == RED ！" << std::endl;
+        return false;
+    }
+
+    return _IsValidRBTree(root->_left,k,BlackNode_count) && _IsValidRBTree(root->_right,k,BlackNode_count);
+
+}
+
+template<class K,class V>
+RBTreeNode<K,V>* RBTree<K,V>::Find(const K& key) {
+    Node* cur = _root;
+    while (cur){
+        if (cur->_kv.first > key){
+            cur = cur->_left;
+        }else if (cur->_kv.first < key){
+            cur = cur->_right;
+        }else{
+            return cur;
+        }
+    }
+    return nullptr;
+}
+
+void test_rbTree1();

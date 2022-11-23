@@ -225,6 +225,30 @@ MyDate/Mydate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.s
 .PHONY : MyDate/Mydate.cpp.s
 
+MyMap/MyMap.o: MyMap/MyMap.cpp.o
+.PHONY : MyMap/MyMap.o
+
+# target to build an object file
+MyMap/MyMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.o
+.PHONY : MyMap/MyMap.cpp.o
+
+MyMap/MyMap.i: MyMap/MyMap.cpp.i
+.PHONY : MyMap/MyMap.i
+
+# target to preprocess a source file
+MyMap/MyMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.i
+.PHONY : MyMap/MyMap.cpp.i
+
+MyMap/MyMap.s: MyMap/MyMap.cpp.s
+.PHONY : MyMap/MyMap.s
+
+# target to generate assembly for a file
+MyMap/MyMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.s
+.PHONY : MyMap/MyMap.cpp.s
+
 MyPriorityQueue/my_priority_queue.o: MyPriorityQueue/my_priority_queue.cpp.o
 .PHONY : MyPriorityQueue/my_priority_queue.o
 
@@ -918,6 +942,9 @@ help:
 	@echo "... MyDate/Mydate.o"
 	@echo "... MyDate/Mydate.i"
 	@echo "... MyDate/Mydate.s"
+	@echo "... MyMap/MyMap.o"
+	@echo "... MyMap/MyMap.i"
+	@echo "... MyMap/MyMap.s"
 	@echo "... MyPriorityQueue/my_priority_queue.o"
 	@echo "... MyPriorityQueue/my_priority_queue.i"
 	@echo "... MyPriorityQueue/my_priority_queue.s"

@@ -25,6 +25,7 @@
 #include "test_Effectivecpp_1/test_effectivecpp_1.h"
 #include "BSTree_key_value/BSTree_key_value.h"
 #include "STL_set/STL_set.h"
+#include "RBTree/RBTree.h"
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -145,6 +146,7 @@ int main() {
     //test_BSTree_key_value1();
     //Test_set2();
     //Test_map4();
-    Test_multiset1();
+    //Test_multiset1();
+    test_rbTree1();
     return 0;
 }
