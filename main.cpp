@@ -26,6 +26,12 @@
 #include "BSTree_key_value/BSTree_key_value.h"
 #include "STL_set/STL_set.h"
 #include "RBTree/RBTree.h"
+#include "MyMapAndSet/MyMap.h"
+#include "MyMapAndSet/MySet.h"
+
+
+
+
 
 void TestInsertSort(){
     int arr[] = {1,7,6,0,2,8,4,2,2,8,2};
@@ -147,6 +153,8 @@ int main() {
     //Test_set2();
     //Test_map4();
     //Test_multiset1();
-    test_rbTree1();
+    //test_rbTree1();
+    //test_my_map();
+
     return 0;
 }

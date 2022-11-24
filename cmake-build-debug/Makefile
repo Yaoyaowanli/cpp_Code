@@ -225,29 +225,53 @@ MyDate/Mydate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyDate/Mydate.cpp.s
 .PHONY : MyDate/Mydate.cpp.s
 
-MyMap/MyMap.o: MyMap/MyMap.cpp.o
-.PHONY : MyMap/MyMap.o
+MyMapAndSet/MyMap.o: MyMapAndSet/MyMap.cpp.o
+.PHONY : MyMapAndSet/MyMap.o
 
 # target to build an object file
-MyMap/MyMap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.o
-.PHONY : MyMap/MyMap.cpp.o
+MyMapAndSet/MyMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MyMap.cpp.o
+.PHONY : MyMapAndSet/MyMap.cpp.o
 
-MyMap/MyMap.i: MyMap/MyMap.cpp.i
-.PHONY : MyMap/MyMap.i
+MyMapAndSet/MyMap.i: MyMapAndSet/MyMap.cpp.i
+.PHONY : MyMapAndSet/MyMap.i
 
 # target to preprocess a source file
-MyMap/MyMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.i
-.PHONY : MyMap/MyMap.cpp.i
+MyMapAndSet/MyMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MyMap.cpp.i
+.PHONY : MyMapAndSet/MyMap.cpp.i
 
-MyMap/MyMap.s: MyMap/MyMap.cpp.s
-.PHONY : MyMap/MyMap.s
+MyMapAndSet/MyMap.s: MyMapAndSet/MyMap.cpp.s
+.PHONY : MyMapAndSet/MyMap.s
 
 # target to generate assembly for a file
-MyMap/MyMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMap/MyMap.cpp.s
-.PHONY : MyMap/MyMap.cpp.s
+MyMapAndSet/MyMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MyMap.cpp.s
+.PHONY : MyMapAndSet/MyMap.cpp.s
+
+MyMapAndSet/MySet.o: MyMapAndSet/MySet.cpp.o
+.PHONY : MyMapAndSet/MySet.o
+
+# target to build an object file
+MyMapAndSet/MySet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MySet.cpp.o
+.PHONY : MyMapAndSet/MySet.cpp.o
+
+MyMapAndSet/MySet.i: MyMapAndSet/MySet.cpp.i
+.PHONY : MyMapAndSet/MySet.i
+
+# target to preprocess a source file
+MyMapAndSet/MySet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MySet.cpp.i
+.PHONY : MyMapAndSet/MySet.cpp.i
+
+MyMapAndSet/MySet.s: MyMapAndSet/MySet.cpp.s
+.PHONY : MyMapAndSet/MySet.s
+
+# target to generate assembly for a file
+MyMapAndSet/MySet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_Code.dir/build.make CMakeFiles/cpp_Code.dir/MyMapAndSet/MySet.cpp.s
+.PHONY : MyMapAndSet/MySet.cpp.s
 
 MyPriorityQueue/my_priority_queue.o: MyPriorityQueue/my_priority_queue.cpp.o
 .PHONY : MyPriorityQueue/my_priority_queue.o
@@ -942,9 +966,12 @@ help:
 	@echo "... MyDate/Mydate.o"
 	@echo "... MyDate/Mydate.i"
 	@echo "... MyDate/Mydate.s"
-	@echo "... MyMap/MyMap.o"
-	@echo "... MyMap/MyMap.i"
-	@echo "... MyMap/MyMap.s"
+	@echo "... MyMapAndSet/MyMap.o"
+	@echo "... MyMapAndSet/MyMap.i"
+	@echo "... MyMapAndSet/MyMap.s"
+	@echo "... MyMapAndSet/MySet.o"
+	@echo "... MyMapAndSet/MySet.i"
+	@echo "... MyMapAndSet/MySet.s"
 	@echo "... MyPriorityQueue/my_priority_queue.o"
 	@echo "... MyPriorityQueue/my_priority_queue.i"
 	@echo "... MyPriorityQueue/my_priority_queue.s"
